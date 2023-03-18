@@ -9,6 +9,7 @@
 
 .contentContainer {
     width: 66%;
+    font-family: "Bierstadt Display", sans-serif;
     display: flex;
     flex-wrap: wrap;
     background-color: DodgerBlue;
@@ -24,7 +25,7 @@
     font-size: 16px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .contentContainer, .navContainer{
         width: 100%;
     }
