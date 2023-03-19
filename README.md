@@ -2,7 +2,8 @@ This Repository is a demonstration ov various technical skills such as navigatin
 
 ----------
 
-3/18/2023 (~1hour)
+3/18/2023
+
 Created about me & resume pages.
 Created navbar for all pages.
 Standardized Navbar on all pages.
@@ -10,6 +11,14 @@ Hosted Resume Remotly on Google Docs & added link.
 Removed Resume Page.
 Added Linkedin Link.
 forced external links to open in new page, and internal links to open on same page for convenience of user.
+
+adjusted site layouts.
+set up nav bar buttons.
+integrated icons into page headers.
+modified content button links.
+adjusted color palate.
+
+
 
 ToDo:
 generate stand-in content for 4 projects and,
@@ -22,6 +31,15 @@ write about me section and,
 get testimonials form people Ive worked with (Daniel Hodges, Dennis Shaver, professors?) and,
 
 ---------
+
+key delierables:
+fully working protoype.
+coherent look with resume design standards & patterns.
+4 full project breakdowns.
+Resume access.
+various social media links.
+index page must be single page/non-scrolling.
+
 
 
 
