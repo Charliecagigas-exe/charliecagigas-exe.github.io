@@ -1,0 +1,21 @@
+<svg width="225" height="100" viewBox="0 0 225 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="225" height="100" fill="white"/>
+<rect x="98.5" y="21.5" width="29" height="57" rx="2.5" stroke="black"/>
+<path d="M105 21H120V22C120 23.1046 119.105 24 118 24H107C105.895 24 105 23.1046 105 22V21Z" fill="black"/>
+<circle cx="113" cy="31" r="3" fill="black"/>
+<circle cx="113" cy="39" r="3" fill="black"/>
+<circle cx="121" cy="39" r="3" fill="black"/>
+<circle cx="105" cy="39" r="3" fill="black"/>
+<circle cx="105" cy="47" r="3" fill="black"/>
+<circle cx="113" cy="47" r="3" fill="black"/>
+<circle cx="121" cy="47" r="3" fill="black"/>
+<circle cx="105" cy="55" r="3" fill="black"/>
+<circle cx="113" cy="55" r="3" fill="black"/>
+<circle cx="121" cy="55" r="3" fill="black"/>
+<circle cx="105" cy="31" r="3" fill="black"/>
+<circle cx="121" cy="31" r="3" fill="black"/>
+<rect x="103" y="62" width="20" height="1" fill="black"/>
+<path d="M98 71H128V76C128 77.6569 126.657 79 125 79H101C99.3431 79 98 77.6569 98 76V71Z" fill="black"/>
+<path d="M119 71C119 74.3137 116.314 77 113 77C109.686 77 107 74.3137 107 71C107 67.6863 109.686 65 113 65C116.314 65 119 67.6863 119 71Z" fill="#EDEDED"/>
+<circle cx="113" cy="71" r="4.5" fill="#EDEDED" stroke="black"/>
+</svg>
