@@ -1,6 +1,7 @@
 body {
     font-family: "Bierstadt Display", sans-serif;
     color: rgb(8, 8, 8);
+    background-color: #f1f1f1;
 }
 
 #titlePane {
@@ -13,6 +14,7 @@ body {
 }
 
 .contentContainer {
+    height: 90%;
     width: 71%;
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +51,7 @@ body {
 .middle {
     transition: .5s ease;
     opacity: 0;
-    position: relative;
+    position: center;
     text-align: center;
     float: center;
 }
@@ -61,18 +63,22 @@ body {
     transition: .5s ease;
 }
 
+
 .navButtonContainer {
     display: inline block;
 }
 
 .navBody {
-    width: 26%;
+    width: 27%;
+    display: flex;
     text-align: center;
     background-color: rgb(29, 112, 236);
     float: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1%;
+    height: 90%;
 }
 
 
@@ -88,6 +94,23 @@ body {
 
 }
 
+.footerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    float: bottom;
+    justify-content: center;
+    background-color: rgb(101, 95, 136);
+    width: 100%;
+    padding: 3px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+  }
+
 @media screen and (max-width: 800px) {
 
     .contentContainer,
@@ -98,7 +121,9 @@ body {
     .content {
         width: 80%;
     }
+}
 
+@media screen and (max-width: 1000px) {
     .navButtons {
         visibility: collapse;
     }
