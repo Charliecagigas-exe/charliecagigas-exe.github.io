@@ -10,42 +10,45 @@
 </head>
 
 <body>
-    <Div class="navBody">
-        <div id="navTitleContent">
-            <h1 id="titlePane">Charles Cagigas</h1>
-            <h2 id="charlieQuote">"I have a passion for small electronics and making a large
-                impact
-                on the world."
-            </h2>
-        </div>
-
-        <div class="navButtonContainer">
-            <div id="topRowNavButtons">
+    <nav>
+        <Div class="navBody">
+            <div id="navTitleContent">
+                <h1 id="titlePane">Charles Cagigas</h1>
+                <h2 id="charlieQuote">"I have a passion for small electronics and making a large
+                    impact
+                    on the world."
+                </h2>
+            </div>
+    
+            <div class="navButtonContainer">
+                <div id="topRowNavButtons">
+                    <br>
+                    <button id="homeButton" class="navButton">
+                        <h3><a href="index.html">Project Home</a></h3>
+                    </button>
+                    <button id="resumeButton" class="navButton">
+                        <h3><a href="https://drive.google.com/file/d/1PAL_CjypUVGlAvm8uILuSfpAQphLun9Y/view?usp=sharing"
+                                target="_blank"> Resume </a></h3>
+                    </button>
+                </div>
                 <br>
-                <button id="homeButton" class="navButton">
-                    <h3><a href="index.html">Project Home</a></h3>
-                </button>
-                <button id="resumeButton" class="navButton">
-                    <h3><a href="https://drive.google.com/file/d/1PAL_CjypUVGlAvm8uILuSfpAQphLun9Y/view?usp=sharing"
-                            target="_blank"> Resume </a></h3>
-                </button>
+                <div id="bottomRowNavButtons">
+                    <button id="aboutButton" class="navButton">
+                        <h3><a href="AboutMe.html"> About </a></h3>
+                    </button>
+                    <button id="LinkedinButton" class="navButton">
+                        <h3><a href="https://www.linkedin.com/in/charles-cagigas2000/" target="_blank">Linkedin</a></h3>
+                    </button>
+                </div>
             </div>
-            <br>
-            <div id="bottomRowNavButtons">
-                <button id="aboutButton" class="navButton">
-                    <h3><a href="AboutMe.html"> About </a></h3>
-                </button>
-                <button id="LinkedinButton" class="navButton">
-                    <h3><a href="https://www.linkedin.com/in/charles-cagigas2000/" target="_blank">Linkedin</a></h3>
-                </button>
-            </div>
-        </div>
-    </Div>
+        </Div>
+    </nav>
 
+<main>
     <div class="contentContainer">
         <article class="MeknoMonitorArticle">
             <h1 class="MeknomonitorProjectTitle">MeknoMonitor</h1>
-            <article class="MeknomonitorProject Header">
+            <article class="articleContent">
                 <aside>
                     <figure>
                         <img class="articlePicture" src="pictures/MeknoMonitorPictures/fullPaladinPrototypeAtShow.jpg" alt="Meknology's Paladin Demonstration" style="width: 100%;">
@@ -55,22 +58,29 @@
                 <h3>Meknology - The Paladin Project</h3>
                 <p>The MeknoMonitor is a monitoring device designed from the ground up to monitor and transmit data collected from sensors regarding the operation of the Paladin – Meknology’s patented technology to sustainably desalinate water. The MeknoMonitor monitors temperature and pressure from critical points in the system to give a readout to users both locally and across the globe. This project was implemented in 3 main sub projects. The monitoring console, the web app monitor, and the Real Time Database (RTDB) hosted on Google’s firebase cloud computing software. </p>
             </article>
-            <article class="MeknomonitorConsoleArticle">
+            <article class="articleContent">
                 <h3>MeknoMonitor Console</h3>
-                <p>The MeknoMonitor is a monitoring device designed from the ground up to monitor and transmit data collected from sensors regarding the operation of the Paladin – Meknology’s patented technology to sustainably desalinate water. The MeknoMonitor monitors temperature and pressure from critical points in the system to give a readout to users both locally and across the globe. This project was implemented in 3 main sub projects. The monitoring console, the web app monitor, and the Real Time Database (RTDB) hosted on Google’s firebase cloud computing software. </p>
+                <p>The Console was the largest part of the system, “it was much more than we need a box, let’s build a box.”-Eric LeBlanc. In the development of the console, we made an effort to mimic the product design process we used for the paladin as a whole. This included Failure Modes Effect Analysis (FMEA), materials consideration processes, process flow diagrams, Rapid Iterative Testing Evolutions (RITE), and many other considerations to ensure that the console was able to perform to our standards and give us the results we needed.</p>
             </article>
-            <article class="MeknomonitorWebsiteArticle">
+            <article class="articleContent">
                 <h3>Web App</h3>
                 <p>The web monitor was an html page that fetched the current readings cyclically using an html-json request. The backend was kept simple to improve access time, and the UI was coherent with the main website identity. </p>
                 </article>
-            <article>
+            <article class="articleContent">
                 <h3>Google FireBase Real Time Database</h3>
                 <p>Google’s cloud computing software, Firebase, was used to host the database due to its ease of use, overall cost, and it’s integration into our current ecosystem. We considered using other services such as AWS, IBM Cloud, and Azure Cloud, however, after running a cost benefit analysis, service analysis, and integration consideration, we decided to go with Firebase.</p>
                 </p>
             </article>
+            <hr>
+            <article class="articleContent">
+                <h3>The Console</h3>
+                <p>The console was modeled after a modified operator’s consolette. This shape & design was chosen after research into the environment of the final product. This console’s shape is ideal for multiple mounting positions, either on a wall or podium, and the angle of the lid allows for multiple points of view. The placement of the console with the paladin was difficult, as wire length, physical location of install, power & internet connection requirements were all concerns that restricted the placement of the console.</p>
+            </article>
         </article>
-        
     </div>
+</main>
+<footer>
+    <p class="footerText">Charles Cagigas ©2023</p>
+</footer>
 </body>
-
 </html>

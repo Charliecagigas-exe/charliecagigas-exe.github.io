@@ -37,6 +37,18 @@ body {
     position: relative;
 }
 
+.MeknoMonitorArticle{
+    margin: 10px;
+  padding: 5px;
+  background-color: lightgray;
+}   
+
+.MeknoMonitorArticle > h3, .articleContent {
+    margin: 100px;
+    padding: 5px;
+    background-color: white;
+}
+
 /*.middle, .contentImage .contentOverlayText code for content in index menu 
 */
 
@@ -117,6 +129,12 @@ footer {
     justify-content: center;
   }
 
+
+/*
+Media Queries
+*/
+
+/*fetch Screen size*/
 @media screen and (max-width: 800px) {
 
     .contentContainer,
@@ -128,7 +146,6 @@ footer {
         width: 80%;
     }
 }
-
 @media screen and (max-width: 1000px) {
     .navButtons {
         visibility: collapse;
