@@ -3,7 +3,7 @@ body {
     color: rgb(8, 8, 8);
     background-color: #f1f1f1;
     height: 100%;
-    margin: 0%;
+    margin: .5%;
 }
 
 #titlePane {
@@ -37,6 +37,9 @@ body {
     position: relative;
 }
 
+/*.middle, .contentImage .contentOverlayText code for content in index menu 
+*/
+
 .content:hover .image {
     opacity: .3;
 }
@@ -69,13 +72,15 @@ body {
 
 aside {
     width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
+    margin: 5px;
     float: right;
     font-style: italic;
     background-color: lightgray;
+    display: flex;
   }
-
+/*
+Navigation Styles
+*/
 .navBody {
     width: 27%;
     border:rgb(0, 0, 0);
@@ -89,27 +94,15 @@ aside {
     padding: 1%;
 }
 
-
-
 .navButtons {
     background-color: #f1f1f1;
     width: 45%;
     text-align: center;
     font-size: 16px;
     justify-content: center;
-    display: inline-block;
+    display: block;
     padding: 15px;
 
-}
-
-.footerContainer{
-    display: flex;
-    flex-wrap: wrap;
-    float: bottom;
-    
-    
-    
-    padding: 3px;
 }
 
 footer {
