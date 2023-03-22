@@ -38,32 +38,36 @@ body {
     width: 45%;
     height: 40vh;
     margin: 3px;
-    text-align: center;
     font-size: 16px;
     padding: 3px;
-    position: relative;
     align-items: center;
-    display: flex;
+    display: inline;
     justify-content: center;
+    
 }
 
-.contentButton {
-    display;
-}
-
-.contentOverlayText {
-    background-color: #04AA6D;
-    display: block;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+.contentImage .contentOverlayText {
+    grid-column: 1;
+    grid-row: 1;
+    
 }
 
 .contentImage {
-    display: block;
     width: 100%;
     transition: .5s ease;
 }
+
+.contentOverlayText {
+
+    background-color: #04AA6D;
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    transition: .5s ease;
+}
+
+
 
 .MeknoMonitorArticle{
     margin: 10px;
