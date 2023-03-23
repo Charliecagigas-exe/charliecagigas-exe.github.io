@@ -5,6 +5,7 @@ body {
     font-family: "Bierstadt Display", sans-serif;
     color: rgb(8, 8, 8);
     background-color: #f1f1f1;
+    font-size: 16px;
     margin: .5%;
 }
 
@@ -101,7 +102,6 @@ Navigation Styles
     float: left;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding: 1%;
     height: 90vh;
 }
@@ -110,13 +110,16 @@ Navigation Styles
     display: inline-block;
     background-color: #f1f1f1;
     width: 25vw;
+    height: 10vh;
     padding: 20px;
     margin: 5px;
     transition: all 0.5s;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1vw;
     display: inline;
     padding: 15px;
+    text-align: center;
+    transform: translateZ(10vh);
 
 }
 
