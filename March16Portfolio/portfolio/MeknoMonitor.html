@@ -96,10 +96,18 @@
                 <br>
                 <p>A 16x2 LCD Display was added to show the two readings. This size screen was the smallest where the information was still legible. This display initially had capabilities to operate on the same i2c bus as the pressure sensor, however after an issue with the i2c backpack, the display was wired manually.</p>
                 <br>
-                <p>A 9volt battery pack was included inside the console to operate as a battery backup if needed. During the final demo, the console operated on this battery pack for 5 consecutive hours with no issues.</p>
-                <hr>
-
-            </article>
+                <p>A 9volt battery pack was included inside the console to operate as a battery backup if needed. During the final demo, the console operated on this battery pack for 5 consecutive hours with no issues.</p>            </article>
+        </article>
+        <hr>
+        <article class="articleContent">
+            <h3>Firebase Console</h3>
+            <p>The server side of this project was relatively painless. There are many resources for uploading data from the Arduino, as many hobbyists use firebase for their home improvement projects. Firebase’s Real Time Database is an application interface that stores data in real time, and synchronizes application data for IOS, android, Web, Linux, mac and more.</p>
+            <br>
+            <p>This platform’s cross compatibility, future expandability, and price point made it the clear winner over the other services under consideration, Amazon Web Service, IBM Cloud, and Microsoft Azure. The non-SQL nature of the RTDB means that there will be lower latency, a larger data headroom, and a somewhat more flexible data model.</p>
+            <br>
+            <p>The setup with this application is relatively easy. An API key, and database URL are the only things needed to set up a free database, which can be allocated through firebase. The console that will be transmitting data has to package the data up for transmission as a JSON packet. The formatting for this can be found in the firebase configuration guide, and there are countless YouTube videos with instructions, tips, and tricks.</p>
+            <br>
+            
         </article>
     </div>
 </main>
