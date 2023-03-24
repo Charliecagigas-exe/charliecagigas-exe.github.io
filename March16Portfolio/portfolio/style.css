@@ -2,13 +2,17 @@
 
 
 body {
-    font-family: "Bierstadt Display", sans-serif;
-    color: rgb(8, 8, 8);
-    background-color: #f1f1f1;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(132, 154, 253);
     font-size: 16px;
-    margin: .5%;
+    
 }
 
+nav{
+    position: fixed;
+}
+
+/*nav pane*/
 #titlePane {
     font-size: 48px;
     font-family: 'Sansita', sans-serif;
@@ -17,10 +21,67 @@ body {
 #charlieQuote {
     font-size: 24px;
     font-family: 'Sansita', sans-serif;
+}
+
+nav{
+    width: 27vw;
+    display: flex;
+    text-align: center;
+    background-color: rgb(142, 185, 250);
+    float: left;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+
+.navButton {
+    display: inline;
+    background-color: #f1f1f1;
+    width: 25vw;
+    height: 10vh;
+    padding: 20px;
+    margin: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 1vw;
+    display: inline;
+    padding: 15px;
+    text-align: center;
 
 }
 
-.contentContainer {
+/*This is what makes the nav buttons fun!*/
+.navButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .navButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .navButton:hover span {
+    padding-right: 25px;
+  }
+  
+  .navButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  /*project container*/
+
+ #contentButtonContainer {
     height: 95vh;
     width: 70%;
     display: flex;
@@ -28,9 +89,64 @@ body {
     background-color: rgb(39, 28, 97);
     float: right;
     justify-content: center;
-    padding:2px;
+    border-radius: 5px;    
 }
 
+
+.projectContainer{
+    width: 31vw;
+    height: 40vh;
+    border: 10px solid rgb(34, 34, 34);
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 16px;
+    padding: 3px;
+    position: relative;
+    
+}
+
+.projectText {
+    color: white;
+  font-size: 20px;
+  position: relative;
+  
+}
+
+
+#meknoMonitorProject {
+    background-image: url('pictures/MeknoMonitorPictures/paladinConsoleonly.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(0px);
+}
+
+#meknoMonitorProject:hover {
+    filter:blur(3px);
+}
+
+#ledAppRedesign{
+    background-image: url('pictures/LEDAppRedesign/old and new.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    filter: blur(0px);
+}
+
+#ledAppRedesign:hover {
+    filter:blur(3px);
+}
+
+#beatsManualRedesign {
+    background-color: rgb(127, 161, 255);
+}
+
+#fileStuctureRedesign {
+    background-color: rgb(127, 161, 255);
+}
+
+
+/*
 .content {
     background-color: #eda7a7;
     border-radius: 10px;
@@ -41,15 +157,21 @@ body {
     margin: 3px;
     font-size: 16px;
     padding: 3px;
-    align-items: center;
-    display: inline;
-    justify-content: center;
+}
+#MeknoMonitor {
+    background-image: url('pictures/MeknoMonitorPictures/paladinConsoleonly.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
     
 }
 
 .contentImage .contentOverlayText {
     grid-column: 1;
     grid-row: 1;
+    justify-content: center;
     
 }
 
@@ -59,14 +181,27 @@ body {
 }
 
 .contentOverlayText {
-
+    text-align: center;
     background-color: #04AA6D;
-    position: absolute;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-    transition: .5s ease;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
 }
+
+.contentButtonText {
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: #04AA6D;
+    font-family: 'Nunito', sans-serif;
+
+} */
 
 
 
@@ -89,64 +224,6 @@ aside {
     font-style: italic;
     background-color: lightgray;
     display: flex;
-  }
-/*
-Navigation Styles
-*/
-.navBody {
-    width: 27%;
-    border:rgb(0, 0, 0);
-    display: flex;
-    text-align: center;
-    background-color: rgb(142, 185, 250);
-    float: left;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1%;
-    height: 90vh;
-}
-
-.navButton {
-    display: inline-block;
-    background-color: #f1f1f1;
-    width: 25vw;
-    height: 10vh;
-    padding: 20px;
-    margin: 5px;
-    transition: all 0.5s;
-    cursor: pointer;
-    font-size: 1vw;
-    display: inline;
-    padding: 15px;
-    text-align: center;
-    transform: translateZ(10vh);
-
-}
-
-/*This is what makes the nav buttons fun!*/
-.navButton span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .navButton span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .navButton:hover span {
-    padding-right: 25px;
-  }
-  
-  .navButton:hover span:after {
-    opacity: 1;
-    right: 0;
   }
 
 footer {
@@ -175,7 +252,7 @@ Media Queries
     }
 
     .navBody {
-        height: auto;
+        height: 20vh;
     }
 
     .content {
@@ -183,7 +260,7 @@ Media Queries
     }
 }
 @media screen and (max-width: 1100px) {
-    .navButtons {
+    .navButton {
         visibility: collapse;
     }
     .content {
