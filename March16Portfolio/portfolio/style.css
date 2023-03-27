@@ -4,8 +4,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     background-color: rgb(132, 154, 253);
-    font-size: 16px;
-    
+    font-size: 16px;    
 }
 
 nav{
@@ -13,14 +12,11 @@ nav{
 }
 
 /*nav pane*/
-#titlePane {
-    font-size: 48px;
-    font-family: 'Sansita', sans-serif;
-}
 
 #charlieQuote {
     font-size: 24px;
     font-family: 'Sansita', sans-serif;
+    color: rgb(43, 43, 43);
 }
 
 nav{
@@ -51,6 +47,10 @@ nav{
     padding: 15px;
     text-align: center;
 
+}
+
+.navButtonText {
+    color: rgb(43, 43, 43);
 }
 
 /*This is what makes the nav buttons fun!*/
@@ -120,7 +120,7 @@ nav{
 }
 
 .projectText {
-    color: rgb(5, 5, 5);
+    color: rgb(43, 43, 43);
     font-size: 36px;
 }
 
