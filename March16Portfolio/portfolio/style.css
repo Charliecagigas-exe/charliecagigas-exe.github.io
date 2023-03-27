@@ -102,13 +102,27 @@ nav{
     font-size: 16px;
     padding: 3px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
     
+}
+
+.shownText{
+    filter: blur(0px);
+}
+
+.hiddenText{
+  
 }
 
 .projectText {
     color: white;
   font-size: 20px;
-  position: relative;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  padding: 25%;
   
 }
 
@@ -118,24 +132,16 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(0px);
 }
 
-#meknoMonitorProject:hover {
-    filter:blur(3px);
-}
 
 #ledAppRedesign{
     background-image: url('pictures/LEDAppRedesign/old and new.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: inherit;
-    filter: blur(0px);
 }
 
-#ledAppRedesign:hover {
-    filter:blur(3px);
-}
 
 #beatsManualRedesign {
     background-color: rgb(127, 161, 255);
