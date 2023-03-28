@@ -48,47 +48,47 @@
     <div class="contentContainer">
         <article class="MeknoMonitorArticle articleBody">
             <div class="articleTitleContainer">
-                <div class="articleTitleContainer">
+                <div>
                     <h1 class="articleTitle">
                         MeknoMonitor
                     </h1>
                 </div>
                 <article class="articleNav">
                     <div>
-                        <button class="articleNavButton">Overview</button>
-                        <button class="articleNavButton">Console</button>
-                        <button class="articleNavButton">Web App</button>
-                        <button class="articleNavButton">Database</button>
-                        <button class="articleNavButton">Console</button>
+                        <a href="#MeknoMonitorArticleOverview"><button class="articleNavButton">Overview</button></a>
+                        <a href="#MeknoMonitorArticleConsole"><button class="articleNavButton">Console</button></a>
+                        <a href="#MeknoMonitorArticleWebApp"><button class="articleNavButton">Web App</button></a>
+                        <a href="#MeknoMonitorArticleRTDB"><button class="articleNavButton">Database</button></a>
+                        <a href="index.html"><button class="articleNavButton">Home</button></a>
                     </div>
                 </article>
             </div>
             <article class="articleContent">
+                <hr>
                 <aside>
                     <figure>
                         <img class="articlePicture" src="pictures/MeknoMonitorPictures/fullPaladinPrototypeAtShow.jpg" alt="Meknology's Paladin Demonstration" style="width: 100%;">
                         <figcaption>Meknology's Paladin Demonstration</figcaption>
                     </figure>
                 </aside>
-                <h3>Meknology - The Paladin Project</h3>
+                <h2 id="MeknoMonitorArticleOverview">The Paladin project</h2>
                 <p>The MeknoMonitor is a monitoring device designed from the ground up to monitor and transmit data collected from sensors regarding the operation of the Paladin – Meknology’s patented technology to sustainably desalinate water. The MeknoMonitor monitors temperature and pressure from critical points in the system to give a readout to users both locally and across the globe. This project was implemented in 3 main sub projects. The monitoring console, the web app monitor, and the Real Time Database (RTDB) hosted on Google’s firebase cloud computing software. </p>
-            </article>
-            <article class="articleContent">
+                <hr>
                 <h3>MeknoMonitor Console</h3>
                 <p>The Console was the largest part of the system, “it was much more than we need a box, let’s build a box.”-Eric LeBlanc. In the development of the console, we made an effort to mimic the product design process we used for the paladin as a whole. This included Failure Modes Effect Analysis (FMEA), materials consideration processes, process flow diagrams, Rapid Iterative Testing Evolutions (RITE), and many other considerations to ensure that the console was able to perform to our standards and give us the results we needed.</p>
-            </article>
-            <article class="articleContent">
+
                 <h3>Web App</h3>
                 <p>The web monitor was an html page that fetched the current readings cyclically using an html-json request. The backend was kept simple to improve access time, and the UI was coherent with the main website identity. </p>
-                </article>
-            <article class="articleContent">
+
                 <h3>Google FireBase Real Time Database</h3>
                 <p>Google’s cloud computing software, Firebase, was used to host the database due to its ease of use, overall cost, and it’s integration into our current ecosystem. We considered using other services such as AWS, IBM Cloud, and Azure Cloud, however, after running a cost benefit analysis, service analysis, and integration consideration, we decided to go with Firebase.</p>
-                </p>
             </article>
-            <hr>
             <article class="articleContent">
+                <div id="MeknoMonitorArticleConsole">
+                    <hr>
+                </div>
                 <h3>The Console</h3>
+                <hr>
                 <p>The console was modeled after a modified operator’s consolette. This shape & design was chosen after research into the environment of the final product. This console’s shape is ideal for multiple mounting positions, either on a wall or podium, and the angle of the lid allows for multiple points of view. The placement of the console with the paladin was difficult, as wire length, physical location of install, power & internet connection requirements were all concerns that restricted the placement of the console.</p>
                 <br>
                 <p>Determining what measurables needed to be monitored was a time consuming but rewarding process. Using the FMEA, Daniel, Eric, and the representative from a sensor distributor, we were able to look at every possible failure mode, and determine a way to monitor it, with just 3 sensors.</p>
@@ -113,8 +113,14 @@
                 <br>
                 <p>A 9volt battery pack was included inside the console to operate as a battery backup if needed. During the final demo, the console operated on this battery pack for 5 consecutive hours with no issues.</p>            
             </article>
+
             <article class="articleContent">
-                <h3>Firebase Console</h3>
+                <h3 id="MeknoMonitorArticleWebApp">Custom Web App</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque aut dolorum eaque consectetur error in minus, ipsum optio rem. Fuga libero nesciunt quaerat possimus eveniet blanditiis consectetur molestiae, maiores neque laboriosam quo voluptatum voluptate excepturi natus veniam molestias officia soluta vitae quia odit, nisi itaque iure quasi! Laboriosam, nisi eaque.</p>
+            </article>
+
+            <article class="articleContent">
+                <h3 id="MeknoMonitorArticleRTDB">Firebase Real Time Database</h3>
                 <p>The server side of this project was relatively painless. There are many resources for uploading data from the Arduino, as many hobbyists use firebase for their home improvement projects. Firebase’s Real Time Database is an application interface that stores data in real time, and synchronizes application data for IOS, android, Web, Linux, mac and more.</p>
                 <br>
                 <p>This platform’s cross compatibility, future expandability, and price point made it the clear winner over the other services under consideration, Amazon Web Service, IBM Cloud, and Microsoft Azure. The non-SQL nature of the RTDB means that there will be lower latency, a larger data headroom, and a somewhat more flexible data model.</p>
