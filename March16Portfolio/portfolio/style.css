@@ -1,6 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: rgb(132, 154, 253);
+    background-color: rgb(41, 44, 46);
     font-size: 16px;    
 }
 
@@ -28,7 +28,7 @@ nav{
     width: 27vw;
     display: flex;
     text-align: center;
-    background-color: rgb(145, 178, 216);
+    background-color: rgb(41, 44, 46);
     float: left;
     display: inline-flex;
     flex-wrap: wrap;
@@ -55,7 +55,7 @@ nav{
 }
 
 .navButtonText {
-    color: rgb(43, 43, 43);
+    color: rgb(70, 70, 70);
 }
 
 /*This is what makes the nav buttons fun!*/
@@ -90,7 +90,7 @@ nav{
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(39, 28, 97);
+    background-color: rgb(58, 55, 71);
     float: right;
     justify-content: center;
     border-radius: 5px;
@@ -102,7 +102,7 @@ nav{
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(39, 28, 97);
+    background-color: rgb(41, 44, 46);
     float: right;
     justify-content: center;
     border-radius: 5px;    
