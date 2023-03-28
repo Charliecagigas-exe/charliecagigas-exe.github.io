@@ -81,6 +81,17 @@ nav{
 
   /*project container*/
 
+  .contentContainer {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(39, 28, 97);
+    float: right;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
  #contentButtonContainer {
     height: 95vh;
     width: 70%;
@@ -91,7 +102,6 @@ nav{
     justify-content: center;
     border-radius: 5px;    
 }
-
 
 .projectContainer{
     width: 31vw;
@@ -148,7 +158,6 @@ nav{
 #fileStuctureRedesign {
     background-color: rgb(127, 161, 255);
 }
-
 
 .MeknoMonitorArticle{
     margin: 10px;
