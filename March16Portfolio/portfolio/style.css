@@ -212,7 +212,10 @@ nav{
 
 
 #beatsManualRedesign {
-    background-color: rgb(127, 161, 255);
+    background-image: url('pictures/BeatsAppRedesign/beatsManualWholeDark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
 }
 
 #fileStuctureRedesign {
