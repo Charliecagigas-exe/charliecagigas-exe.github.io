@@ -5,7 +5,7 @@ body {
 }
 
 nav{
-    position: fixed;
+    
 }
 
 mark{
@@ -19,19 +19,19 @@ mark{
 /*nav pane*/
 
 .namePic{
-    width: 100%;
+    height: 25vh;
     justify-content: center;
     align-items: center;
 }
 
 .navQuoteContainer {
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin: 5px;
+    margin: 2vh;
 }
 
 #charlieQuote {
@@ -41,12 +41,11 @@ mark{
 }
 
 nav{
+    position: fixed;
     width: 27vw;
-    display: flex;
     text-align: center;
     background-color: rgb(40, 40, 40);
     float: left;
-    display: inline-flex;
     flex-wrap: wrap;
     padding: 1%;
     height: 90vh;
