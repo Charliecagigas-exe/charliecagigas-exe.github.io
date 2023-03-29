@@ -18,6 +18,22 @@ mark{
 
 /*nav pane*/
 
+.namePic{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navQuoteContainer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+}
+
 #charlieQuote {
     font-size: 24px;
     font-family: 'Sansita', sans-serif;
@@ -28,7 +44,7 @@ nav{
     width: 27vw;
     display: flex;
     text-align: center;
-    background-color: rgb(41, 44, 46);
+    background-color: rgb(40, 40, 40);
     float: left;
     display: inline-flex;
     flex-wrap: wrap;
@@ -40,7 +56,7 @@ nav{
 
 .navButton {
     display: inline;
-    background-color: rgb(225, 232, 243);
+    background-color: rgb(60, 60, 60);
     width: 25vw;
     height: 10vh;
     margin: 5px;
@@ -51,14 +67,17 @@ nav{
     padding: 15px;
     text-align: center;
     border-radius: 5px;
+    filter: drop-shadow(0px 0px 5px rgb(24, 24, 24));
 
 }
 
-.navButtonText {
-    color: rgb(70, 70, 70);
+.navButtonText, #charlieQuote {
+    color: rgb(233, 233, 233);
 }
 
-/*This is what makes the nav buttons fun!*/
+/*
+-----------------------------------------------
+    Nav Button Hover-This is what makes the nav buttons fun!*/
 .navButton span {
     cursor: pointer;
     display: inline-block;
@@ -83,8 +102,44 @@ nav{
     right: 0;
   }
 
+  /*
+-----------------------------------------------
+    Project Buttons - same thing as nav buttons but different colors
+  */
 
-  /*project container*/
+  .projectDiv span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .projectDiv span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .projectDiv:hover span {
+    padding-right: 25px;
+  }
+  
+  .projectDiv:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  mark:hover span{
+    padding: left 15px;
+  }
+
+
+  /*
+  -----------------------------------------------
+  
+  project container*/
 
   .contentContainer {
     width: 70%;
@@ -171,7 +226,7 @@ nav{
     flex-wrap: wrap;
     background-color: rgb(39, 28, 97);
     border-radius: 5px;
-    margin: 5px;
+    margin: 8px;
     font-size: 16px;
     padding: 3px;
     position: relative;
@@ -183,7 +238,9 @@ nav{
 }   
 
 .MeknoMonitorArticle > h3, .articleContent {
-    margin: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
     padding: 5px;
     background-color: white;
 }
@@ -192,7 +249,7 @@ nav{
     display: flex;
     width: 100%;
     height: 7vh;
-    background-color: rgb(101, 95, 136);
+    background-color: rgb(60, 60, 60);
     border-radius: 5px;
     align-items: center;
     position: sticky;
@@ -200,6 +257,7 @@ nav{
 }
 
 .articleTitle {
+    color: #f1f1f1;
     padding: 5px;
     font-size: xxx-large;
 }
@@ -228,10 +286,11 @@ article>h2 {
 
 article>h3 {
     font-size: x-large;
+    margin-left: 3vw;
 }
 
 article>p{
-    font-size: large;
+    font-size: x-large;
 }
 
 aside {
@@ -250,7 +309,7 @@ footer {
     position: fixed; 
     bottom: 0;
     height: 5vh;
-    background-color: rgb(101, 95, 136);
+    background-color: rgb(137, 137, 139);
     width: 100%;
     justify-content: center;
   }
