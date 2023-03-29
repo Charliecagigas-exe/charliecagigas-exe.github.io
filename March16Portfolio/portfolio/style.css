@@ -4,10 +4,6 @@ body {
     font-size: 16px;    
 }
 
-nav{
-    
-}
-
 mark{
     color: #f1f1f1;
     background-color: rgb(24, 24, 24);
@@ -19,9 +15,7 @@ mark{
 /*nav pane*/
 
 .namePic{
-    height: 25vh;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 
 .navQuoteContainer {
@@ -58,12 +52,10 @@ nav{
     background-color: rgb(60, 60, 60);
     width: 25vw;
     height: 10vh;
-    margin: 5px;
     transition: all 0.5s;
     cursor: pointer;
     font-size: 1vw;
     display: inline;
-    padding: 15px;
     text-align: center;
     border-radius: 5px;
     filter: drop-shadow(0px 0px 5px rgb(24, 24, 24));
@@ -344,5 +336,11 @@ Media Queries
     .content {
         width: 100%;
         height: 23vh;
+    }
+}
+
+@media screen and (max-height:700px) {
+    .navButton {
+        visibility: collapse;
     }
 }
