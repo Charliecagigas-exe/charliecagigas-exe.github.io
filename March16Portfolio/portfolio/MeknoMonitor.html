@@ -116,10 +116,8 @@
                 <p>Google’s cloud computing software, Firebase, was used to host the database due to its ease of use, overall cost, and it’s integration into our current ecosystem. We considered using other services such as AWS, IBM Cloud, and Azure Cloud, however, after running a cost benefit analysis, service analysis, and integration consideration, we decided to go with Firebase.</p>
             </article>
             <article class="articleContent">
-                <div id="MeknoMonitorArticleConsole">
-                    <hr>
-                </div>
-                <h3>The Console</h3>
+                <hr>
+                <h2 id="MeknoMonitorArticleConsole">The Console</h2>
                 <hr>
                 <p>The console was modeled after a modified operator’s consolette. This shape & design was chosen after research into the environment of the final product. This console’s shape is ideal for multiple mounting positions, either on a wall or podium, and the angle of the lid allows for multiple points of view. The placement of the console with the paladin was difficult, as wire length, physical location of install, power & internet connection requirements were all concerns that restricted the placement of the console.</p>
                 <br>
@@ -131,6 +129,8 @@
                         <figcaption>Console Prototype</figcaption>
                     </figure>
                 </aside>
+                <p>After the sensors were selected, we had to determine how to mount them. This was a difficult process, but after many iterations, we were able to find a way to mount the sensors in the console, and the console on the paladin.</p> 
+                <br>
                 <p>Selection of materials for the console involved water penetration tests, electrical conduction tests, cost analysis, source analysis, and ecological impact analysis. The results of these tests showed that Masonite, an engineered wood that consists of layers of wood fibers glued & pressed together. I worked with an intern to design a 3d model of the console. This model was then sent to the prototype lab to be “flattened” – a process that takes the 3d model and splits it into 2d panels that can be cut out with a CNC machine and pieced together.</p>
                 <br>
                 <p>Once the model was flattened, it was uploaded to the lab CNC machine, where it followed the cutout pattern. The console was then reassembled, and we had a physical prototype for the console ready for the insides to be implanted.</p>
@@ -165,8 +165,8 @@
             </article>
 
             <article class="articleContent">
-                <hr  id="MeknoMonitorArticleWebApp">
-                <h3>Custom Web App</h3>
+                <hr>
+                <h2 id="MeknoMonitorArticleWebApp">Custom Web App</h2>
                 <hr>
                 <aside class="rightAside">
                     <figure>
@@ -178,14 +178,14 @@
             </article>
 
             <article class="articleContent">
-                <hr id="MeknoMonitorArticleRTDB">
-                <h3 >Firebase Real Time Database</h3>
+                <hr>
+                <h2 id="MeknoMonitorArticleRTDB">Firebase Real Time Database</h2>
                 <hr>
                 <p>The server side of this project was relatively painless. There are many resources for uploading data from the Arduino, as many hobbyists use firebase for their home improvement projects. Firebase’s Real Time Database is an application interface that stores data in real time, and synchronizes application data for IOS, android, Web, Linux, mac and more.</p>
                 <br>
                 <p>This platform’s cross compatibility, future expandability, and price point made it the clear winner over the other services under consideration, Amazon Web Service, IBM Cloud, and Microsoft Azure. The non-SQL nature of the RTDB means that there will be lower latency, a larger data headroom, and a somewhat more flexible data model.</p>
                 <br>
-                <p>The setup with this application is relatively easy. An API key, and database URL are the only things needed to set up a free database, which can be allocated through firebase. The console that will be transmitting data has to package the data up for transmission as a JSON packet. The formatting for this can be found in the firebase configuration guide, and there are countless YouTube videos with instructions, tips, and tricks.</p>
+                <p>An API key and database URL are the only things needed to set up a free database, which can be allocated through firebase. The console that will be transmitting data needs to format the data for transmission as a JSON packet. The formatting for this can be found in the firebase configuration guide, and there are countless YouTube videos with instructions, tips, and tricks.</p>
                 <br>
                 
             </article>      
