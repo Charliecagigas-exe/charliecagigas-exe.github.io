@@ -5,6 +5,10 @@ body {
     font-size: 16px;    
 }
 
+a{
+    text-decoration: none;
+}
+
 mark{
     color: #f1f1f1;
     background-color: rgb(24, 24, 24);
@@ -32,17 +36,17 @@ mark{
 #charlieQuote {
     font-size: 24px;
     font-family: 'Sansita', sans-serif;
-    color: rgb(43, 43, 43);
 }
 
 nav{
     position: fixed;
     width: 27vw;
     text-align: center;
+    justify-content: center;
     background-color: rgb(40, 40, 40);
     float: left;
     flex-wrap: wrap;
-    padding: 1%;
+    padding-right: 1%;
     height: 90vh;
     border-radius: 5px;
 }
@@ -50,7 +54,7 @@ nav{
 
 .navButton {
     display: inline;
-    background-color: rgba(60, 60, 60, 0);
+    background-color: rgba(206, 34, 34, 0);
     width: 25vw;
     height: 10vh;
     transition: all 0.5s;
@@ -59,6 +63,7 @@ nav{
     display: inline;
     text-align: center;
     border-radius: 5px;
+    border: none;
 }
 
 .navButtonText, #charlieQuote {
@@ -167,7 +172,7 @@ nav{
 
 .projectDiv {
   position: absolute;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(30px);
   width: 100%;
   height: 100%;
   display: flex;
@@ -176,7 +181,7 @@ nav{
 }
 
 .projectText {
-    color: rgb(43, 43, 43);
+    color: rgb(255, 255, 255);
     font-size: 36px;
 }
 
@@ -223,7 +228,7 @@ nav{
     align-items: center;
     padding: 1px;
     padding: 5px;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(148, 72, 72);
 }   
 
 .MeknoMonitorArticle > h3, .articleContent {
@@ -231,7 +236,7 @@ nav{
     margin-right: 10vw;
     margin-top: 5vh;
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 .articleTitleContainer{
@@ -257,16 +262,21 @@ nav{
     background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
     justify-content: right;
+    align-items: center;
     padding-right: 10px;
 }
 
 .articleNavButton {
     display: inline;
-    width: 5vw;
+    height: 6vh;
+    font-size: small;
     background-color: rgba(225, 232, 243, 0);
-    padding: 15px;
-    border-radius: 5px;
+    padding: left 5px, right 5px;
+    border:none;
     cursor: pointer;
+    color: #0a0a0a;
+    font-size: medium;
+    text-decoration: none;
 }
 
 article>h2 {
@@ -275,13 +285,23 @@ article>h2 {
 
 article>h3 {
     font-size: x-large;
-    margin-left: 3vw;
 }
 
 article>p{
     font-size: x-large;
+    margin-left: 3vw;
     font-family: 'Didact Gothic', sans-serif;
 
+}
+
+.articleHeaderImageContainer{
+    display: flex;
+    background-color: #0a0a0a;
+    width: inherit;
+}
+
+.articleHeaderImage{
+    filter: blur(5px);
 }
 
 .rightAside {
@@ -300,7 +320,7 @@ article>p{
     float: left;
     font-style: italic;
     text-align: center;
-    background-color: rgb(184, 87, 87);
+    background-color: rgba(218, 130, 130, 0.863);
     display: flex;
   }
 
@@ -347,7 +367,7 @@ Media Queries
     }
 }
 
-@media screen and (max-height:700px) {
+@media screen and (max-height:600px) {
     .navButton {
         visibility: collapse;
     }
