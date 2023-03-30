@@ -62,11 +62,6 @@
 <main>
     <div class="contentContainer">
         <article class="MeknoMonitorArticle articleBody">
-            <div class="articleHeaderImageContainer">
-                <div class="articleHeaderImageDiv">
-                    <img class="articleHeaderImage" src="pictures/MeknoMonitorPictures/paladinConsoleonly.jpg">
-                </div>
-            </div>
             <div class="articleTitleContainer">
                 <div>
                     <h1 class="articleTitle">
@@ -87,24 +82,33 @@
                     </div>
                 </article>
             </div>
-            <article class="articleContent">
-                <h2 id="MeknoMonitorArticleOverview">Meknology's Paladin</h2>
 
+            <article class="articleHeaderImageContainer">
+                <img class="articleHeaderImage" src="pictures/MeknoMonitorPictures/paladinConsoleonly.jpg">                
             </article>
+
             <article class="articleContent">
-                <hr>
-                <aside class="rightAside">
-                    <figure>
-                        <img class="articlePicture" src="pictures/MeknoMonitorPictures/fullPaladinPrototypeAtShow.jpg" alt="Meknology's Paladin Demonstration" style="width: 100%;">
-                        <figcaption>Meknology's Paladin Demonstration</figcaption>
-                    </figure>
-                </aside>
-                
-                <p>The MeknoMonitor is a monitoring device designed from the ground up to monitor and transmit data collected from sensors regarding the operation of the Paladin – Meknology’s patented technology to sustainably desalinate water. The MeknoMonitor monitors temperature and pressure from critical points in the system to give a readout to users both locally and across the globe. This project was implemented in 3 main sub projects. The monitoring console, the web app monitor, and the Real Time Database (RTDB) hosted on Google’s firebase cloud computing software. </p>
+                <hr id="MeknoMonitorArticleOverview">
+                <div>
+                    <aside class="rightAside">
+                        <figure>
+                            <img class="articlePicture" src="pictures/MeknoMonitorPictures/fullPaladinPrototypeAtShow.jpg" alt="Meknology's Paladin Demonstration" style="width: 100%;">
+                            <figcaption>Meknology's Paladin Demonstration</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+                <h2>Overview</h2>
+                <p>The MeknoMonitor is a system designed from the ground up to monitor and transmit data collected from sensors regarding the operation of the Metal Plater's Paladin - designed and developed by Meknology LLC using patented technology to sustainably & efficiently desalinate water. The MeknoMonitor will monitor temperature and pressure from critical points in the system to give a readout to users both locally and across the globe. This project was implemented in 3 main projects. The phisical monitoring console, the HTML web app monitor, and the Real Time Database (RTDB) hosted on Google’s firebase cloud computing software. </p>
                 <hr>
                 <h3>MeknoMonitor Console</h3>
                 <p>The Console was the largest part of the system, “it was much more than we need a box, let’s build a box.”-Eric LeBlanc. In the development of the console, we made an effort to mimic the product design process we used for the paladin as a whole. This included Failure Modes Effect Analysis (FMEA), materials consideration processes, process flow diagrams, Rapid Iterative Testing Evolutions (RITE), and many other considerations to ensure that the console was able to perform to our standards and give us the results we needed.</p>
 
+                <aside class="rightAside">
+                    <figure>
+                        <img class="articlePicture" src="pictures/MeknoMonitorPictures/PaladinWithConsole.jpg" alt="Console Prototype" style="width: 100%;">
+                        <figcaption>Console Prototype</figcaption>
+                    </figure>
+                </aside>
                 <h3>Web App</h3>
                 <p>The web monitor was an html page that fetched the current readings cyclically using an html-json request. The backend was kept simple to improve access time, and the UI was coherent with the main website identity. </p>
 
@@ -123,7 +127,7 @@
                 <br>
                 <aside class="leftAside">
                     <figure>
-                        <img class="articlePicture" src="pictures/MeknoMonitorPictures/ConsolePrototype.jpg" alt="Console Prototype" style="width: 100%;">
+                        <img class="articlePicture" src="pictures/MeknoMonitorPictures/ConsoleProgress.jpg" alt="Console Prototype" style="width: 100%;">
                         <figcaption>Console Prototype</figcaption>
                     </figure>
                 </aside>
@@ -133,10 +137,22 @@
                 <br>
                 <p>The electronics inside the console had to go through a rigorous selection process as well. This device will be operating “away from home” most of its life, so a robust and reliant system is the highest priority. With our stock of hobby sensors and micro-controllers, we needed to ensure that the system was repairable in the event of an emergency, as the failure rate with these sensors is much higher than standard industrial sensors. Because of this, we decided to keep the system on a standard breadboard and use standard breadboard connections instead of soldering components directly to our prototype board.</p>
                 <br>
+                <aside class="rightAside">
+                    <figure>
+                        <img class="articlePicture" src="pictures/MeknoMonitorPictures/ConsoleBrains.jpg" alt="Arduino R3 test set-up" style="width: 100%;">
+                        <figcaption>Testing code with sensors & display</figcaption>
+                    </figure>
+                </aside>
                 <p>We decided to use an Arduino uno R3 as the brains of the console. This micro-processor is extremely versatile, and has safeguards built into the board level preventing over current, shorts from many points, and fused power to provide an extra layer of protection. In addition, the expandability of this board allows us to break it out and use the processor independently allowing future expandability. The massive network of hobbyists is growing daily, so any issues that arose, a reference for that problem was already created, as someone has used that part and had a similar issue.</p>
                 <br>
                 <p>We used the MPRLS Ported Pressure sensor. This sensor is a hobbyist sensor that has 6 pins, only needing 4 for standard operation. This sensor operates on the i2c bus, a modern communication protocol that uses one wire for a clock pulse, and another for signed data. Each module connected to the i2c bus has its own address and is able to communicate with the micro-processor. This sensor has many advantages; however, the one common downside is their lifespan. when measuring dry pressure there is no issue with durability. However, considering the material we are measuring, the lifespan of these sensors degrades rapidly. In fact, we saw the degradation of one sensor a week before our final demo day due to constant testing and needed to have a replacement within the week.</p>
                 <br>
+                <aside class="leftAside">
+                    <figure>
+                        <img class="articlePicture" src="pictures/MeknoMonitorPictures/initialConsoleDevelopment.jpg" alt="Connecting sensors to the micro-processor" style="width: 100%;">
+                        <figcaption>Connecting sensors to the micro-processor</figcaption>
+                    </figure>
+                </aside>
                 <p>The temperature sensors we used were much more durable. We chose Resistance Temperature Detectors (RTD) Thermistors, as their simplicity allowed us to incorporate multiple with ease, and we did not need to worry about damaging these as much. The resistance from the sensor probe was returned to the micro-processor for interpretation, and display. The nature of this sensor means that we need to compensate for the length of the sensor wire, and since we were limited in length, this put a constraint on the placement of the console in regard to the paladin system. Because of the wire length, we decided to place the console just above the opening for the tube. This allowed easy viewing from the height of the system, as well as prevented accidental water spillage.</p>
                 <br>
                 <p>One key function of the MeknoMonitor was the ability to cut the power to the system as a whole. Due to time constraints, the pump controls were not integrated into the console, however, the power to the box was controlled by a toggle switch that would turn on and off the monitoring system. </p>
@@ -149,12 +165,22 @@
             </article>
 
             <article class="articleContent">
-                <h3 id="MeknoMonitorArticleWebApp">Custom Web App</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque aut dolorum eaque consectetur error in minus, ipsum optio rem. Fuga libero nesciunt quaerat possimus eveniet blanditiis consectetur molestiae, maiores neque laboriosam quo voluptatum voluptate excepturi natus veniam molestias officia soluta vitae quia odit, nisi itaque iure quasi! Laboriosam, nisi eaque.</p>
+                <hr  id="MeknoMonitorArticleWebApp">
+                <h3>Custom Web App</h3>
+                <hr>
+                <aside class="rightAside">
+                    <figure>
+                        <img class="articlePicture" src="pictures/MeknoMonitorPictures/MeknoMonitorWebApp.png" alt="Website" style="width: 100%;">
+                        <figcaption>MeknoMonitor Webisite</figcaption>
+                    </figure>
+                </aside>
+                <p>The website was built to monitor the variables passed to the RTDB in real time. This was a single page website made in html with two bars, one representing temperature, and one for pressure. These bars give a visual indication of the pressure and temperature, as well as the numerical readout below the bar. This webpage was designed to match the design of the Meknology website. Colors were chosen to match the ones used in the site, the same font was used, and the standard slogan was placed on top. </p>
             </article>
 
             <article class="articleContent">
-                <h3 id="MeknoMonitorArticleRTDB">Firebase Real Time Database</h3>
+                <hr id="MeknoMonitorArticleRTDB">
+                <h3 >Firebase Real Time Database</h3>
+                <hr>
                 <p>The server side of this project was relatively painless. There are many resources for uploading data from the Arduino, as many hobbyists use firebase for their home improvement projects. Firebase’s Real Time Database is an application interface that stores data in real time, and synchronizes application data for IOS, android, Web, Linux, mac and more.</p>
                 <br>
                 <p>This platform’s cross compatibility, future expandability, and price point made it the clear winner over the other services under consideration, Amazon Web Service, IBM Cloud, and Microsoft Azure. The non-SQL nature of the RTDB means that there will be lower latency, a larger data headroom, and a somewhat more flexible data model.</p>
