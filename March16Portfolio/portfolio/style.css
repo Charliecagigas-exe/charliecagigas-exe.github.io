@@ -30,7 +30,6 @@ mark{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin: 2vh;
 }
 
 #charlieQuote {
@@ -46,7 +45,7 @@ nav{
     background-color: rgb(40, 40, 40);
     float: left;
     flex-wrap: wrap;
-    padding-right: 1%;
+    padding: 1%;
     height: 90vh;
     border-radius: 5px;
 }
