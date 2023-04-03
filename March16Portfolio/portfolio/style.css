@@ -212,6 +212,11 @@ nav{
     background-color: rgb(127, 161, 255);
 }
 
+/*
+-----------------------------------------------
+Article Text
+*/
+
 .MeknoMonitorArticle{
     width: 100%;
     height: 100%;
@@ -318,6 +323,12 @@ article>p{
 
 }
 
+
+/*
+--------------------------------
+Photo asides
+*/
+
 .rightAside {
     width: 55%;
     margin-left: 15px;
@@ -341,6 +352,51 @@ article>p{
     display: flex;
     border-radius: 5px;
   }
+
+  /*
+--------------------------------
+LED App Styles
+  */
+
+
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .galleryImage {
+    opacity: 0.6;
+    transition: all 0.5s ease;
+  }
+  
+  .active,
+  .galleryImage:hover {
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+
+
+
+
+
+
 
 footer {
     text-align: center;

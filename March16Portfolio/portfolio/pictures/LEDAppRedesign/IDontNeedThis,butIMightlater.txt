@@ -1,0 +1,33 @@
+
+                        <div class="LEDAppGalleryContentContainer">
+                            <div class="LEDAppSlides">
+                                <div class="numberText">1&nbsp;/&nbsp;6</div>
+                                <img src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width: auto;" alt="Redesigned app home screen">
+                            </div>
+                            <div class="LEDAppSlides">
+                                <div class="numberText">2&nbsp;/&nbsp;6</div>
+                                <img src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color wheel.png" style="width: auto;" alt="Redesigned app home screen"> 
+                            </div>
+                            <div class="LEDAppSlides">
+                                <div class="numberText">3&nbsp;/&nbsp;6</div>
+                                <img src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width: auto;" alt="Redesigned app home screen">
+                            </div>
+                            <div class="LEDAppSlides">
+                                <div class="numberText">4&nbsp;/&nbsp;6</div>
+                                <img src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width: auto;" alt="Redesigned app home screen">
+                            </div>
+                            <div class="LEDAppSlides">
+                                <div class="numberText">5&nbsp;/&nbsp;6</div>
+                                <img src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width: auto;" alt="Redesigned app home screen">
+                            </div>
+                            <div class="LEDAppSlides">
+                                <div class="numberText">6&nbsp;/&nbsp;6</div>
+                                <img src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width: auto;" alt="Redesigned app home screen">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
