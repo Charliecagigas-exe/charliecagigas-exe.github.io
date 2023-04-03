@@ -98,87 +98,40 @@
                     </div>
                     <h2>Overview</h2>
                     <p>Apollo Lighting is an app that approximately 100,000 people use almost every day. This app was reviewed over 500 times in the google play store, with more than 50% of reviewers giving the app 1 star. User - Christian Casablancas - left a 1-star review saying “This has to be one of the useless apps to control a light strip. Whoever designed these needs to seriously take some App Development courses. Just use the cheap remote that comes with the light and you're better off.”</p>
-                    <p>Or from Savanna Nelson - “Downloaded the app so I could connect MY music to the app like the lights say you can do. Turns out you only get 9 songs to pick from. Immediately uninstalled. Waste of my time and I'll be buying different lights next time.” And many more examples with many different problems across the app as a whole.</p>
-                    <p>Apollo Lighting is losing customers left and right because a bad app interface ruins a perfectly good product. Improving the functionality and usability of the interface will attract many users, as this system has many attractive selling points, and a functioning app will tie them all together.</p>
-                    <p>The redesign focused on aspects verified users talked about in their reviews on the Apple app store and Google Play Store, as this is the widest sampling of users, and you are able to specifically find users with issues. </p>
-                    
-                    <aside class="rightAside">
-                        <figure>
-                            <img class="articlePicture" src="pictures/LEDAppRedesign/Screenshot_20211109-152420.png" alt="Apollo Lighting Prototype" style="width: 100%;">
-                            <figcaption>App Prototype</figcaption>
-                        </figure>
-                    </aside>
-                </article>
+                    <p>Apollo Lighting is losing customers left and right because a bad app interface ruins a perfectly good product. Improving the functionality and usability of the interface will attract many users, as this system has many attractive selling points, and a functioning app will tie them all together. </p>                     
+                    </article>
                 <article class="articleContent">
-                    <hr>
-                    <h2 id="MeknoMonitorArticleConsole">Issue Inventory: Personal App Usage</h2>
                     <aside class="leftAside">
                         <figure>
-                            <img class="articlePicture" src="pictures/MeknoMonitorPictures/ConsoleProgress.jpg" alt="Console Prototype" style="width: 100%;">
-                            <figcaption>Console Prototype</figcaption>
+                            <img class="articlePicture" src="pictures/LEDAppRedesign/Screenshot_20211109-152353.png" alt="Apollo Lighting Prototype" style="width: 100%;">
+                            <figcaption>Original App Homescreen</figcaption>
                         </figure>
                     </aside>
-                    <p>After the sensors were selected, we had to determine how to mount them. This was a difficult process, but after many iterations, we were able to find a way to mount the sensors in the console, and the console on the paladin.</p> 
-                    <br>
-                    <p>Selection of materials for the console involved water penetration tests, electrical conduction tests, cost analysis, source analysis, and ecological impact analysis. The results of these tests showed that Masonite, an engineered wood that consists of layers of wood fibers glued & pressed together. I worked with an intern to design a 3d model of the console. This model was then sent to the prototype lab to be “flattened” – a process that takes the 3d model and splits it into 2d panels that can be cut out with a CNC machine and pieced together.</p>
-                    <br>
-                    <p>Once the model was flattened, it was uploaded to the lab CNC machine, where it followed the cutout pattern. The console was then reassembled, and we had a physical prototype for the console ready for the insides to be implanted.</p>
-                    <br>
-                    <p>The electronics inside the console had to go through a rigorous selection process as well. This device will be operating “away from home” most of its life, so a robust and reliant system is the highest priority. With our stock of hobby sensors and micro-controllers, we needed to ensure that the system was repairable in the event of an emergency, as the failure rate with these sensors is much higher than standard industrial sensors. Because of this, we decided to keep the system on a standard breadboard and use standard breadboard connections instead of soldering components directly to our prototype board.</p>
-                    <br>
-                    <aside class="rightAside">
-                        <figure>
-                            <img class="articlePicture" src="pictures/MeknoMonitorPictures/ConsoleBrains.jpg" alt="Arduino R3 test set-up" style="width: 100%;">
-                            <figcaption>Testing code with sensors & display</figcaption>
-                        </figure>
-                    </aside>
-                    <p>We decided to use an Arduino uno R3 as the brains of the console. This micro-processor is extremely versatile, and has safeguards built into the board level preventing over current, shorts from many points, and fused power to provide an extra layer of protection. In addition, the expandability of this board allows us to break it out and use the processor independently allowing future expandability. The massive network of hobbyists is growing daily, so any issues that arose, a reference for that problem was already created, as someone has used that part and had a similar issue.</p>
-                    <br>
-                    <p>We used the MPRLS Ported Pressure sensor. This sensor is a hobbyist sensor that has 6 pins, only needing 4 for standard operation. This sensor operates on the i2c bus, a modern communication protocol that uses one wire for a clock pulse, and another for signed data. Each module connected to the i2c bus has its own address and is able to communicate with the micro-processor. This sensor has many advantages; however, the one common downside is their lifespan. when measuring dry pressure there is no issue with durability. However, considering the material we are measuring, the lifespan of these sensors degrades rapidly. In fact, we saw the degradation of one sensor a week before our final demo day due to constant testing and needed to have a replacement within the week.</p>
-                    <br>
-                    <aside class="leftAside">
-                        <figure>
-                            <img class="articlePicture" src="pictures/MeknoMonitorPictures/initialConsoleDevelopment.jpg" alt="Connecting sensors to the micro-processor" style="width: 100%;">
-                            <figcaption>Connecting sensors to the micro-processor</figcaption>
-                        </figure>
-                    </aside>
-                    <p>The temperature sensors we used were much more durable. We chose Resistance Temperature Detectors (RTD) Thermistors, as their simplicity allowed us to incorporate multiple with ease, and we did not need to worry about damaging these as much. The resistance from the sensor probe was returned to the micro-processor for interpretation, and display. The nature of this sensor means that we need to compensate for the length of the sensor wire, and since we were limited in length, this put a constraint on the placement of the console in regard to the paladin system. Because of the wire length, we decided to place the console just above the opening for the tube. This allowed easy viewing from the height of the system, as well as prevented accidental water spillage.</p>
-                    <br>
-                    <p>One key function of the MeknoMonitor was the ability to cut the power to the system as a whole. Due to time constraints, the pump controls were not integrated into the console, however, the power to the box was controlled by a toggle switch that would turn on and off the monitoring system. </p>
-                    <br>
-                    <p>Two buttons were added to the exterior of the MeknoMonitor, one to trigger the pressure reading on the display, and one to show the temperature reading. Each button was wired directly to the Arduino, and when pressed would swap the display mode.  The console still receives both values within one JSON request, and prints both to the serial monitor for diagnostic & efficiency purposes.</p>
-                    <br>
-                    <p>A 16x2 LCD Display was added to show the two readings. This size screen was the smallest where the information was still legible. This display initially had capabilities to operate on the same i2c bus as the pressure sensor, however after an issue with the i2c backpack, the display was wired manually.</p>
-                    <br>
-                    <p>A 9volt battery pack was included inside the console to operate as a battery backup if needed. During the final demo, the console operated on this battery pack for 5 consecutive hours with no issues.</p>            
-                </article>
-    
-                <article class="articleContent">
                     <hr>
-                    <h2 id="MeknoMonitorArticleWebApp">Custom Web App</h2>
+                    <h2>Methods</h2>
                     <hr>
-                    <aside class="rightAside">
-                        <figure>
-                            <img class="articlePicture" src="pictures/MeknoMonitorPictures/MeknoMonitorWebApp.png" alt="Website" style="width: 100%;">
-                            <figcaption>MeknoMonitor Webisite</figcaption>
-                        </figure>
-                    </aside>
-                    <p>The website was built to monitor the variables passed to the RTDB in real time. This was a single page website made in html with two bars, one representing temperature, and one for pressure. These bars give a visual indication of the pressure and temperature, as well as the numerical readout below the bar. This webpage was designed to match the design of the Meknology website. Colors were chosen to match the ones used in the site, the same font was used, and the standard slogan was placed on top. </p>
-                </article>
-    
-                <article class="articleContent">
+                    <h3>Issue Inventory: Personal App Usage</h3>
+                    <p>Over the first two weeks of the study, I took notes as to usage of features, time spent on app to achieve desired outcome, total time spent on app, and several other variables that will be useful later in the redesign.</p>
                     <hr>
-                    <h2 id="MeknoMonitorArticleRTDB">Firebase Real Time Database</h2>
+                    <h3>Voice of Customer Evaluation</h3>
+                    <p>Looking at the reviews proved to be the best source for improvement. Taking note of the positive aspects ensured no current users were alienated, and focusing on the negative points allowed the redesign to have the greatest impact in the shortest amount of time.</p>
                     <hr>
-                    <p>The server side of this project was relatively painless. There are many resources for uploading data from the Arduino, as many hobbyists use firebase for their home improvement projects. Firebase’s Real Time Database is an application interface that stores data in real time, and synchronizes application data for IOS, android, Web, Linux, mac and more.</p>
-                    <br>
-                    <p>This platform’s cross compatibility, future expandability, and price point made it the clear winner over the other services under consideration, Amazon Web Service, IBM Cloud, and Microsoft Azure. The non-SQL nature of the RTDB means that there will be lower latency, a larger data headroom, and a somewhat more flexible data model.</p>
-                    <br>
-                    <p>An API key and database URL are the only things needed to set up a free database, which can be allocated through firebase. The console that will be transmitting data needs to format the data for transmission as a JSON packet. The formatting for this can be found in the firebase configuration guide, and there are countless YouTube videos with instructions, tips, and tricks.</p>
-                    <br>
+                    <h3>Qualitative Usability Test (Round 1)</h3>
+                    <p>The first round of usability testing called for 7 people to execute 5 tasks, rate the difficulty of each, then suggest 3 possible ways to change the task process. Each test was timed for future reference.</p>
+                    <hr>
+                    <h3>Collaborative Brainstorm & Comparative Analysis</h3>
+                    <p>The first usability study yielded many user suggestions for improvements. Working with the users from the first usability test, they brainstormed ways all of these improvements could be implemented and compared with current apps to develop wireframe prototypes for testing.</p>
+                    <hr>
+                    <h3>Low-fidelity Prototype</h3>
+                    <p>The various users were put into groups to generate wireframes for each page of the app. The groups were asked to develop 3 wireframes and consult with each other in between. This process allowed for the refinement of many advanced features and implementation of basic ones based on users’ suggestions.</p>
+                    <hr>
+                    <h3>Qualitative Usability Test (Round 2)</h3>
+                    <p>A usability test was conducted on the final rendition of the wireframe diagram process, based heavily on user feedback. Each user was given the opportunity to use both versions and give a suggestion as to what 1 thing they would change, regardless of why. Accessibility was a major focal point for this redesign, and improvements to help general usability were implemented.</p>
+                    <hr>
+                    <h3>High-Fidelity Wireframe with Rapid Feedback Collection</h3>
+                    <p>A high fidelity prototype was developed in Figma - a free design tool designed for rapid prototypes of designs- with the intent on gathering feedback and proposing a polished, interactive model that could be shown to prospective programmers or development teams. The final design included 11 screens: home screen, color wheel, menu, light show, music multiple pages of settings, among other screens. Using RITE I developed a model in Figma that was appealing to  users, and provided a stress free experience. </p>
+                
                     
-                </article>      
-            
                 </article>
             <hr>   
         </div>
