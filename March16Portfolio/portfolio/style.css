@@ -442,3 +442,10 @@ Media Queries
         height: 23vh;
     }
 }
+
+@media screen and (max-width:1300px) {
+    .articleNav{
+      visibility: collapse;
+    }
+
+}

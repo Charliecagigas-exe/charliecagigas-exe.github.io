@@ -69,6 +69,8 @@
                 </div>
                 <article class="articleNav">
                     <div>
+                        <a href="#MeknoMonitorArticleBackground"><button class="articleNavButton">Background</button></a>
+                        |
                         <a href="#MeknoMonitorArticleOverview"><button class="articleNavButton">Overview</button></a>
                         |
                         <a href="#MeknoMonitorArticleConsole"><button class="articleNavButton">Console</button></a>
@@ -91,13 +93,14 @@
                 <h2>Mekology's Metal Plater's Paladin - Control Console</h2>
                 <hr>
                 <p>
-                    Also Known as the MeknoMonitor<sup>tm</sup>; Designed and developed from the ground up using several research and design principles  
+                    Also known as the MeknoMonitor<sup>tm</sup>, Designed using several research and design principles to develop a computer system to monitor variables and display them locally and remotly.
                 </p>
                 <hr>
                 <p>
                     <strong>Role:</strong>
                     <em>UI Designer, </em>
-                    <em>UX Researcher</em>
+                    <em>UX Researcher, </em>
+                    <em>Software & Hardware Engineer</em>
                 </p>
                 <p>
                     <strong>Timeline:</strong>
@@ -106,7 +109,16 @@
             </article>
 
             <article class="articleContent">
+                <hr id="MeknoMonitorArticleBackground">
+                <h2>Background</h2>
+                <hr>
+                <p>Using it's patented process, The Metal Plater's Paladin is a system designed to sustainably separate metal plating waste water into its two main components: pure water, and metal plating sludge. This sludge often consists of heavy metals such as chromium, nickel, sodium, and tin. 
+                <br>
+                In order for the Paladin to sustainably separate water into these two components, the reaction chamber temperature and pressure needs to be closly monitored. current solutions do not exist, so Meknology needed to develop a custom console to monitor the reaction. </p>
+
                 <hr id="MeknoMonitorArticleOverview">
+                <h2>Overview</h2>
+                <hr>
                 <div>
                     <aside class="rightAside">
                         <figure>
@@ -115,12 +127,11 @@
                         </figure>
                     </aside>
                 </div>
-                <h2>Overview</h2>
-                <p>The MeknoMonitor is a system designed from the ground up to monitor and transmit data collected from sensors regarding the operation of the Metal Plater's Paladin - designed and developed by Meknology LLC using patented technology to sustainably & efficiently desalinate water. The MeknoMonitor will monitor temperature and pressure from critical points in the system to give a readout to users both locally and across the globe. This project was implemented in 3 main projects. The phisical monitoring console, the HTML web app monitor, and the Real Time Database (RTDB) hosted on Google’s firebase cloud computing software. </p>
+                <p>The MeknoMonitor is a system designed from the ground up to monitor and transmit data collected from sensors regarding the operation of the Metal Plater's Paladin - designed and developed by Meknology LLC using patented technology to sustainably & efficiently desalinate water. <br>The MeknoMonitor will monitor temperature and pressure from critical points in the system to give a readout to users both locally and across the globe. This project was implemented in 3 main projects. The phisical monitoring console, the HTML web app monitor, and the Real Time Database (RTDB) hosted on Google’s firebase cloud computing software. </p>
                 <hr>
                 <h3>MeknoMonitor Console</h3>
-                <p>The Console was the largest part of the system, “it was much more than we need a box, let’s build a box.”-Eric LeBlanc. In the development of the console, we made an effort to mimic the product design process we used for the paladin as a whole. This included Failure Modes Effect Analysis (FMEA), materials consideration processes, process flow diagrams, Rapid Iterative Testing Evolutions (RITE), and many other considerations to ensure that the console was able to perform to our standards and give us the results we needed.</p>
-
+                <p>The Console was the largest part of the system, “it was much more than we need a box, let’s build a box.”-Eric LeBlanc. In the development of the console, we made an effort to mimic the product design process we used for the paladin as a whole. This included Failure Modes Effect Analysis (FMEA), materials consideration processes, process flow diagrams, Rapid Iterative Testing Evolutions (RITE), and many other considerations to ensure that the console was able to perform to our standards and give us the results we needed.</p>            
+                <hr>
                 <aside class="rightAside">
                     <figure>
                         <img class="articlePicture" src="pictures/MeknoMonitorPictures/PaladinWithConsole.jpg" alt="Console Prototype" style="width: 100%;">
@@ -129,7 +140,7 @@
                 </aside>
                 <h3>Web App</h3>
                 <p>The web monitor was an html page that fetched the current readings cyclically using an html-json request. The backend was kept simple to improve access time, and the UI was coherent with the main website identity. </p>
-
+                <hr>
                 <h3>Google FireBase Real Time Database</h3>
                 <p>Google’s cloud computing software, Firebase, was used to host the database due to its ease of use, overall cost, and it’s integration into our current ecosystem. We considered using other services such as AWS, IBM Cloud, and Azure Cloud, however, after running a cost benefit analysis, service analysis, and integration consideration, we decided to go with Firebase.</p>
             </article>
@@ -199,6 +210,12 @@
                 <hr>
                 <h2 id="MeknoMonitorArticleRTDB">Firebase Real Time Database</h2>
                 <hr>
+                <aside class="rightAside">
+                    <figure>
+                        <img class="articlePicture" src="pictures\MeknoMonitorPictures\firebaseConsoleScreenshot.png" alt="firebase console UI" style="width: 100%;">
+                        <figcaption>Firebase Real Time Database</figcaption>
+                    </figure>
+                </aside>
                 <p>The server side of this project was relatively painless. There are many resources for uploading data from the Arduino, as many hobbyists use firebase for their home improvement projects. Firebase’s Real Time Database is an application interface that stores data in real time, and synchronizes application data for IOS, android, Web, Linux, mac and more.</p>
                 <br>
                 <p>This platform’s cross compatibility, future expandability, and price point made it the clear winner over the other services under consideration, Amazon Web Service, IBM Cloud, and Microsoft Azure. The non-SQL nature of the RTDB means that there will be lower latency, a larger data headroom, and a somewhat more flexible data model.</p>
