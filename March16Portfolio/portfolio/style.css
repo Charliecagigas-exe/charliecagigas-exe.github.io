@@ -209,7 +209,10 @@ nav{
 }
 
 #fileStuctureRedesign {
-    background-color: rgb(127, 161, 255);
+    background-image: url('pictures/MeknoMonitorPictures/paladinalphaprototype.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
 }
 
 /*
