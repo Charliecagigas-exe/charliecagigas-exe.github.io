@@ -1,0 +1,25 @@
+MeknoMonitor - 
+Conducted Comparative analysis, Process Flow Evaluation, User Testing and a Design Failure Modes Effect Analysis to effectivly design & develop a computer system to monitor variables locally & remotly.
+
+
+Apollo Lighting - 
+Conducted several user centered design thinking protocols to analyze and improve the effectiveness and user satisfaction of the Apollo Lighting app through a complete redesign of the interface. 
+
+
+Beats Manual - 
+Conducted several analyses regarding the usability, readability and accessibility of the instruction manual shipped with the Beats Fit Pro, and suggested a redesign that followed existing design guidlines. 
+
+
+Meknology File Redesign - 
+Conducted several analyses to advise the creation and re-organization of files based on target user perspectives and generated a naming scheme that made sense to internal & external audiances. 
+
+conducted ux research, Recomended improvments to file naming conventions and organization help internal & external users 
+
+
+Meknology Summer Internship - 
+Designed & Developed The MeknoMonitor - a console to monitor the Paladin's critical measurements. Designed company webpage & implemented google analytics. Used a Real-Time Database to store variables from the paladin and deliver to customer remotly.
+
+Meknology Winter Internship - 
+Documented "The story of Meknology". Conducted interviews, gathered & organized photos, structured internal files according to file redesign guidelines  
+
+Developped content for infographics, Testimonials to inform the public about Meknology's prpose 
