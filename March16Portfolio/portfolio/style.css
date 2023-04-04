@@ -37,6 +37,16 @@ mark{
     font-style: italic;
 }
 
+@media screen and (max-width: 1000px) {
+    #charlieQuote {
+        font-size: 3vw;
+    }
+    .navButtonContainer {
+        width: 100%;
+    }
+}
+
+
 nav{
     position: fixed;
     width: 27vw;
@@ -59,8 +69,6 @@ nav{
     transition: all 0.5s;
     cursor: pointer;
     font-size: 1vw;
-    display: inline;
-    text-align: center;
     border-radius: 5px;
     border: none;
 }
@@ -77,6 +85,7 @@ nav{
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    font-size: x-large;
   }
   
   .navButton span:after {
@@ -259,7 +268,42 @@ Article Text
     font-size: xxx-large;
 }
 
-.articleNav{
+.barbarbar {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 12px 16px;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, 0);
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    justify-content: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.articleNavBig{
     width: 100%;
     display: flex;
     background-color: rgba(0, 0, 0, 0);
@@ -268,6 +312,7 @@ Article Text
     align-items: center;
     padding-right: 10px;
 }
+
 
 .articleNavButton {
     display: inline;
@@ -421,31 +466,44 @@ footer {
 Media Queries
 */
 
-/*fetch Screen size*/
-@media screen and (max-width: 800px) {
+/*fetch Screen size for whole page*/
+@media screen and (max-width: 1000px) {
 
+    main{
+        width: 100%;
+    }
+
+    .contentButtonContainer{
+        width: 100%;
+    }
+
+    nav{
+        visibility: collapse;
+    }
     .contentContainer{
         width: 100%;
     }
 
-    .navBody {
-        visibility: collapse;
-    }
-
-    .content {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 1100px) {
-    .content {
-        width: 100%;
-        height: 23vh;
-    }
 }
 
-@media screen and (max-width:1300px) {
-    .articleNav{
+
+/*article Nav Screen size */
+@media screen and (max-width:1500px) {
+    .articleNavBig{
       visibility: collapse;
     }
 
+    .articleNavLittle{
+      visibility: visible;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .articleNavBig{
+      visibility: visible;
+    }
+
+    .articleNavLittle{
+      visibility: collapse;
+    }
 }
