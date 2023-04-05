@@ -470,12 +470,14 @@ LED App Styles
   /* Six columns side by side */
   .column {
     float: left;
-    width: 16.66%;
+    width: 16.2%;
+    border: #222 1px solid;
+    border-radius: 5px;
   }
   
   /* Add a transparency effect for thumnbail images */
   .galleryImage {
-    opacity: 0.6;
+    opacity: 0.8;
     transition: all 0.5s ease;
   }
   
