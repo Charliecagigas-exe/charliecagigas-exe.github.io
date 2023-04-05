@@ -277,7 +277,6 @@ Article Text
     flex-wrap: wrap;
     border-radius: 5px;
     margin: left 8px, right 8px;
-    font-size: 16px;
     padding: 3px;
     display: flex;
     align-items: center;
@@ -407,7 +406,7 @@ h2, h3 {
 }
 
 article>p{
-    font-size: x-large;
+    font-size: large;
     margin-left: 1vw;
     margin-right: 1vw;
     font-family: 'Didact Gothic', sans-serif;
@@ -432,6 +431,7 @@ Photo asides
     color: #f1f1f1;
     display: flex;
     border-radius: 5px;
+    font-size: medium;
   }
 
   .leftAside{
@@ -444,6 +444,7 @@ Photo asides
     color: #f1f1f1;
     display: flex;
     border-radius: 5px;
+    font-size: medium;
   }
 
   /*

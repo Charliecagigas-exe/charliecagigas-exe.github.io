@@ -26,7 +26,6 @@
                         on the world.
                     </h2>
                 </div>
-                
             </div>
     
             <div class="navButtonContainer">
@@ -59,35 +58,86 @@
 
 
     <main>
+        <div class="babyNav">
+
+            <div class="babyNavImageContainer">
+                <a href="index.html">
+                    <img src="pictures\titlePlate\NamePlateTransWhiteOutlineLogoPNG.png">
+                </a>
+            </div>
+            
+            <div class="babyNavButtonContainer">
+                <a href="index.html">
+                    <button id="babyHomeButton" class="babyNavButton">
+                        <h3 class="babyNavButtonText"><span>Home</span></h3>
+                    </button>
+                </a>
+                <a href="https://drive.google.com/file/d/1PAL_CjypUVGlAvm8uILuSfpAQphLun9Y/view?usp=sharing" target="_blank">
+                    <button id="babyResumeButton" class="babyNavButton">
+                        <h3 class="babyNavButtonText"><span>Resume</span></h3>
+                    </button>
+                </a>
+                <a href="AboutMe.html">
+                    <button id="babyAboutButton" class="babyNavButton">
+                        <h3 class="babyNavButtonText"><span>About</span></h3>
+                    </button>
+                </a>
+                <a href="https://www.linkedin.com/in/charles-cagigas2000/" target="_blank">
+                    <button id="babyLinkedinButton" class="babyNavButton">
+                        <h3 class="babyNavButtonText"><span>LinkedIn</span></h3>
+                    </button>
+                </a>
+            </div>
+        </div>
         <div class="contentContainer">
             <article class="LEDAppArticle articleBody">
                 <div class="articleTitleContainer">
                     <div>
                         <h1 class="articleTitle">
-                            Apollo&nbsp;LED&nbsp;App&nbsp;Redesign
+                            Apollo&nbsp;Lighting
                         </h1>
                     </div>
-                    <article class="articleNav">
+                    <article class="articleNavBig">
                         <div>
-                            <a href="#MeknoMonitorArticleOverview"><button class="articleNavButton">Overview</button></a>
+                            <a href="#LEDAppArticleBackground"><button class="articleNavButton">Background</button></a>
                             |
-                            <a href="#MeknoMonitorArticleConsole"><button class="articleNavButton">Console</button></a>
+                            <a href="#LEDAppArticleOverview"><button class="articleNavButton">Overview</button></a>
                             |
-                            <a href="#MeknoMonitorArticleWebApp"><button class="articleNavButton">Web App</button></a>
+                            <a href="#LEDAppArticleGallery"><button class="articleNavButton">Gallery</button></a>
                             |
-                            <a href="#MeknoMonitorArticleRTDB"><button class="articleNavButton">Database</button></a>
+                            <a href="#LEDAppArticleMethods"><button class="articleNavButton">Methodology</button></a>
                             |
-                            <a href="index.html"><button class="articleNavButton">Home</button></a>
+                            <a href="#MeknoMonitorArticleRTDB"><button class="articleNavButton">Recomendations</button></a>
+                            |
+                            <a href="index.html"><button class="articleNavButton">Learn More</button></a>
+                        </div>
+                    </article>
+                    <article class="articleNavLittle dropdown">
+                        <button class="articleNavButton">
+                            <div class="barbarbar"></div>
+                            <div class="barbarbar"></div>
+                            <div class="barbarbar"></div>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="#LEDAppArticleBackground">Background</a>
+                            <a href="#MeknoMonitorArticleOverview">Overview</a>
+                            <a href="#MeknoMonitorArticleConsole">Gallery</a>
+                            <a href="#MeknoMonitorArticleWebApp">Methodology</a>
+                            <a href="#MeknoMonitorArticleRTDB">Recomendations</a>
+                            <a href="index.html">Learn More</a>
                         </div>
                     </article>
                 </div>
 
+                <!--get feedback on this - should i keep it or no
                 <article class="articleHeaderImageContainer">
                     <img class="articleHeaderImage" id="LEDAppHeaderImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png">                
                 </article>
+                -->
 
                 <article class="articleContent">
-                    <hr>
+                    <hr id="LEDAppArticleBrief">
                     <h2>Apollo Lighting LED Controller</h2>
                     <hr>
                     <p>Conducted several user centered research protocols to analyze and improve the effectiveness, accesibility, and user satisfaction of the Apollo Lighting app, leading to a complete redesign of the interface. </p>
@@ -103,8 +153,8 @@
                     </p>
                 </article>
     
-                <article class="articleContent">
-                    <hr id="LEDAPPArticleOverview">
+                <article class="articleContent" id="LEDAppArticleBackground">
+                    <hr>
                     <div>
                         <aside class="rightAside">
                             <figure>
@@ -113,39 +163,46 @@
                             </figure>
                         </aside>
                     </div>
-                    <h2>Overview</h2>
+                    <h2>Background</h2>
                     <p>Apollo Lighting is an app that approximately 100,000 people use almost every day. This app was reviewed over 500 times in the google play store, with more than 50% of reviewers giving the app 1 star. User - Christian Casablancas - left a 1-star review saying “This has to be one of the useless apps to control a light strip. Whoever designed these needs to seriously take some App Development courses. Just use the cheap remote that comes with the light and you're better off.”</p>
                     <p>Apollo Lighting is losing customers left and right because a bad app interface ruins a perfectly good product. Improving the functionality and usability of the interface will attract many users, as this system has many attractive selling points, and a functioning app will tie them all together. </p>                     
                 </article>
-                <article class="articleContent">
+
+
+
+                <article class="articleContent" id="LEDAppArticleGallery">
                     <div class="LEDAppGalleryHeader">
                         <hr>
-                        <h2>Gallery</h2>
+                        <h2>
+                            Gallery
+                        </h2>
                         <hr>
-                    <div class="galleryContainer">
-                        <div class="row">
-                            <div class="column">
-                              <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="column">
-                              <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="column">
-                              <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="column">
-                              <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                            <div class="column">
-                              <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width:100%" onclick="currentSlide(5)" alt="">
-                            </div>    
-                            <div class="column">
-                              <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width:100%" onclick="currentSlide(6)" alt="">
+                        <div class="galleryContainer">
+                            <div class="row">
+                                <div class="column">
+                                  <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/color selector.png" style="width:100%" alt="">
+                                </div>
+                                <div class="column">
+                                  <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/Microphone pickup.png" style="width:100%" alt="">
+                                </div>
+                                <div class="column">
+                                  <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/native music player.png" style="width:100%" alt="">
+                                </div>
+                                <div class="column">
+                                  <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/Settings page.png" style="width:100%" alt="">
+                                </div>
+                                <div class="column">
+                                  <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/Timers page.png" style="width:100%" alt="">
+                                </div>    
+                                <div class="column">
+                                  <img class="galleryImage" src="pictures/LEDAppRedesign/newAppPictures/ScreenshotsOfNewApp/stule page 2.png" style="width:100%" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article class="articleContent">
+
+                <article class="articleContent" id="LEDAppArticleMethods">
                     <aside class="leftAside">
                         <figure>
                             <img class="articlePicture" src="pictures/LEDAppRedesign/oldAppPictures/Screenshot_20211109-152353.png" alt="Apollo Lighting Prototype" style="width: 100%;">
@@ -153,7 +210,9 @@
                         </figure>
                     </aside>
                     <hr>
-                    <h2>Methods</h2>
+                    <h2>
+                        Methods
+                    </h2>
                     <hr>
                     <h3>Issue Inventory: Personal App Usage</h3>
                     <p>Over the first two weeks of the study, I took notes as to usage of features, time spent on app to achieve desired outcome, total time spent on app, and several other variables that will be useful later in the redesign.</p>
