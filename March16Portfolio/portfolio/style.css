@@ -30,6 +30,7 @@ mark{
   cursor: pointer;
   padding: 15px;
   border-radius: 5px;
+  z-index: 0;
 }
 
 /*nav pane*/
@@ -344,6 +345,7 @@ Article Text
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     justify-content: center;
+    z-index: 1;
 }
 
 .dropdown-content a {
@@ -367,6 +369,7 @@ Article Text
     align-items: center;
     padding-right: 10px;
 }
+
 
 
 .articleNavButton {
@@ -500,30 +503,25 @@ LED App Styles
     color: white;
   }
   
-  .row:after {
-    content: "";
+  .row {
     display: table;
     clear: both;
   }
   
   /* Six columns side by side */
-  .column {
+  .column  {
     float: left;
     width: 16.2%;
-    border: #222 1px solid;
     border-radius: 5px;
   }
-  
-  /* Add a transparency effect for thumnbail images */
-  .galleryImage {
-    opacity: 0.8;
-    transition: all 0.5s ease;
+  .LEDAppColumn{
+    border: #222 1px solid;
+    padding-left: 1px;
   }
-  
-  .active,
-  .galleryImage:hover {
-    opacity: 1;
-    transition: all 0.5s ease;
+
+  .beatsColumn{
+    border: none;
+    padding-left: 1px;
   }
 
 /*about me page*/
