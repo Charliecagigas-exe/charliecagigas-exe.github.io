@@ -410,6 +410,11 @@ article>h2 {
     margin-left: 3vw;
 }
 
+.galleryTitle{
+    font-size: xx-large;
+    margin-left: 3vw;
+}
+
 article>h3 {
     font-size: large;
     margin-left: 4vw;
@@ -421,6 +426,25 @@ h2, h3 {
 }
 
 article>p{
+    font-size: large;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-family: 'Didact Gothic', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+article>ol{
+    font-size: large;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-family: 'Didact Gothic', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+article>ul {
     font-size: large;
     margin-left: 1vw;
     margin-right: 1vw;
