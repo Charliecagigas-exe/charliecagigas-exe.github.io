@@ -17,6 +17,21 @@ mark{
     filter: drop-shadow(0px 0px 5px rgb(24, 24, 24));
 }
 
+.topButton{
+  display: none;
+  position: fixed;
+  bottom: 10vh;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  background-color: rgb(230, 230, 230);
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+}
+
 /*nav pane*/
 
 .namePic{
@@ -36,6 +51,16 @@ mark{
     font-size: 1.5vw;
     font-style: italic;
 }
+
+@media screen and (max-width: 1000px) {
+    #charlieQuote {
+        font-size: 3vw;
+    }
+    .navButtonContainer {
+        width: 100%;
+    }
+}
+
 
 nav{
     position: fixed;
@@ -59,14 +84,53 @@ nav{
     transition: all 0.5s;
     cursor: pointer;
     font-size: 1vw;
-    display: inline;
-    text-align: center;
     border-radius: 5px;
     border: none;
 }
 
 .navButtonText, #charlieQuote {
     color: rgb(233, 233, 233);
+}
+
+.babyNav{
+    position: sticky;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(40, 40, 40);
+
+}
+
+.babyNavImageContainer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 1vh;
+    width: 10%;
+}
+
+.babyNavButtonContainer{
+    display: flex;
+    justify-content: right;
+    height: 10vh;
+    width: 100%
+
+}
+
+.babyNavButton{
+    display: inline;
+    height: 6vh;
+    font-size: small;
+    background-color: rgba(225, 232, 243, 0);
+    padding: left 5px, right 5px;
+    border:none;
+    cursor: pointer;
+    color: #f8f8f8;
+    font-size: medium;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+
 }
 
 /*
@@ -77,6 +141,7 @@ nav{
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    font-size: x-large;
   }
   
   .navButton span:after {
@@ -227,7 +292,6 @@ Article Text
     flex-wrap: wrap;
     border-radius: 5px;
     margin: left 8px, right 8px;
-    font-size: 16px;
     padding: 3px;
     display: flex;
     align-items: center;
@@ -250,7 +314,7 @@ Article Text
     border-radius: 5px;
     align-items: center;
     position: sticky;
-    top: 0;
+    top: 10px;
 }
 
 .articleTitle {
@@ -259,7 +323,42 @@ Article Text
     font-size: xxx-large;
 }
 
-.articleNav{
+.barbarbar {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 12px 16px;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, 0);
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    justify-content: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.articleNavBig{
     width: 100%;
     display: flex;
     background-color: rgba(0, 0, 0, 0);
@@ -268,6 +367,7 @@ Article Text
     align-items: center;
     padding-right: 10px;
 }
+
 
 .articleNavButton {
     display: inline;
@@ -290,6 +390,7 @@ Article Text
     align-items: center;
     justify-content: center;
     background-origin: border-box;
+    
 }
 
 .articleHeaderImage{
@@ -320,7 +421,7 @@ h2, h3 {
 }
 
 article>p{
-    font-size: x-large;
+    font-size: large;
     margin-left: 1vw;
     margin-right: 1vw;
     font-family: 'Didact Gothic', sans-serif;
@@ -345,6 +446,7 @@ Photo asides
     color: #f1f1f1;
     display: flex;
     border-radius: 5px;
+    font-size: medium;
   }
 
   .leftAside{
@@ -357,6 +459,7 @@ Photo asides
     color: #f1f1f1;
     display: flex;
     border-radius: 5px;
+    font-size: medium;
   }
 
   /*
@@ -382,12 +485,14 @@ LED App Styles
   /* Six columns side by side */
   .column {
     float: left;
-    width: 16.66%;
+    width: 16.2%;
+    border: #222 1px solid;
+    border-radius: 5px;
   }
   
   /* Add a transparency effect for thumnbail images */
   .galleryImage {
-    opacity: 0.6;
+    opacity: 0.8;
     transition: all 0.5s ease;
   }
   
@@ -421,31 +526,70 @@ footer {
 Media Queries
 */
 
-/*fetch Screen size*/
-@media screen and (max-width: 800px) {
+/*fetch Screen size for whole page*/
+@media screen and (max-width: 1000px) {
 
+    main{
+        width: 100%;
+    }
+
+    .contentButtonContainer{
+        width: 100%;
+    }
+
+    nav{
+        visibility: collapse;
+    }
+    .babyNav{
+        display: block;
+    }
     .contentContainer{
         width: 100%;
     }
 
-    .navBody {
-        visibility: collapse;
+    .articleHeaderImageContainer {
+        display: none;
     }
 
-    .content {
-        width: 80%;
-    }
 }
-@media screen and (max-width: 1100px) {
-    .content {
-        width: 100%;
-        height: 23vh;
+
+@media screen and (max-width:700px) {
+  .babyNavButtonContainer{
+    visibility: collapse;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+    .babyNav{
+        display: none;
+    }
+    nav{
+        visibility: visible;
+    }
+
+    .articleHeaderImageContainer{
+        display: flex;
     }
 }
 
-@media screen and (max-width:1300px) {
-    .articleNav{
+
+/*article Nav Screen size */
+@media screen and (max-width:1500px) {
+    .articleNavBig{
       visibility: collapse;
     }
 
+    .articleNavLittle{
+      visibility: visible;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .articleNavBig{
+      visibility: visible;
+    }
+
+    .articleNavLittle{
+      visibility: collapse;
+    }
 }

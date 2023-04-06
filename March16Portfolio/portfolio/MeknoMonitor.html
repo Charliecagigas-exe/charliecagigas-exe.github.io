@@ -59,6 +59,38 @@
     </nav>
 
 <main>
+    <button onclick="topFunction()" id="MeknoMonitorTopButton" class="topButton" title="go to top">Top</button>
+    <div class="babyNav">
+
+        <div class="babyNavImageContainer">
+            <a href="index.html">
+                <img src="pictures\titlePlate\NamePlateTransWhiteOutlineLogoPNG.png">
+            </a>
+        </div>
+        
+        <div class="babyNavButtonContainer">
+            <a href="index.html">
+                <button id="babyHomeButton" class="babyNavButton">
+                    <h3 class="babyNavButtonText"><span>Home</span></h3>
+                </button>
+            </a>
+            <a href="https://drive.google.com/file/d/1PAL_CjypUVGlAvm8uILuSfpAQphLun9Y/view?usp=sharing" target="_blank">
+                <button id="babyResumeButton" class="babyNavButton">
+                    <h3 class="babyNavButtonText"><span>Resume</span></h3>
+                </button>
+            </a>
+            <a href="AboutMe.html">
+                <button id="babyAboutButton" class="babyNavButton">
+                    <h3 class="babyNavButtonText"><span>About</span></h3>
+                </button>
+            </a>
+            <a href="https://www.linkedin.com/in/charles-cagigas2000/" target="_blank">
+                <button id="babyLinkedinButton" class="babyNavButton">
+                    <h3 class="babyNavButtonText"><span>LinkedIn</span></h3>
+                </button>
+            </a>
+        </div>
+    </div>
     <div class="contentContainer">
         <article class="MeknoMonitorArticle articleBody">
             <div class="articleTitleContainer">
@@ -67,7 +99,7 @@
                         MeknoMonitor
                     </h1>
                 </div>
-                <article class="articleNav">
+                <article class="articleNavBig">
                     <div>
                         <a href="#MeknoMonitorArticleBackground"><button class="articleNavButton">Background</button></a>
                         |
@@ -82,13 +114,30 @@
                         <a href="index.html"><button class="articleNavButton">Home</button></a>
                     </div>
                 </article>
+                <article class="articleNavLittle dropdown">
+                    <button class="articleNavButton">
+                        <div class="barbarbar"></div>
+                        <div class="barbarbar"></div>
+                        <div class="barbarbar"></div>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="#MeknoMonitorArticleBackground">Background</a>
+                        <a href="#MeknoMonitorArticleOverview">Overview</a>
+                        <a href="#MeknoMonitorArticleConsole"> - Console</a>
+                        <a href="#MeknoMonitorArticleWebApp"> - Web App</a>
+                        <a href="#MeknoMonitorArticleRTDB"> - Database</a>
+                    </div>
+                </article>
             </div>
 
+            <!--get feedback on this - should i keep it or no
             <article class="articleHeaderImageContainer">
                 <img class="articleHeaderImage" src="pictures/MeknoMonitorPictures/paladinConsoleonly.jpg">                
             </article>
+        -->
 
-            <article class="articleContent">
+            <article class="articleContent" id="MeknoMonitorArticleBrief">
                 <hr>
                 <h2>Mekology's Metal Plater's Paladin - Control Console</h2>
                 <hr>
@@ -227,12 +276,36 @@
         
             </article>
         <hr>
-        
     </div>
 </main>
 
 <footer>
     <p class="footerText">Charles Cagigas ©2023</p>
 </footer>
+
+<!--topButton Script-->
+<script>
+    // Get the button
+    let mybutton = document.getElementById("MeknoMonitorTopButton");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
 </body>
 </html>
