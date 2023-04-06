@@ -420,7 +420,7 @@ article>h3 {
     margin-left: 4vw;
 }
 
-h2, h3 {
+h2, h3, p {
     font-family: 'Didact Gothic', sans-serif;
     text-justify: inter-word;
 }
@@ -526,7 +526,41 @@ LED App Styles
     transition: all 0.5s ease;
   }
 
+/*about me page*/
+.aboutMeTextContainer{
+    width: 45%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    background-color: #f1f1f1;
+    float : left;
+    border-radius: 5px;
+}
 
+.aboutMeText {
+    color: #222;
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Didact Gothic', sans-serif;
+    margin:3vw;
+}
+
+.aboutMePhotoContainer {
+    width: 45%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    background-color: #f1f1f1;
+    float: right;
+    border-radius: 5px;
+}
 
 
 
