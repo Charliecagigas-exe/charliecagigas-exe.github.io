@@ -224,7 +224,7 @@ nav{
 }
 
 .projectContainer{
-    width: 31vw;
+    width: 30vw;
     height: 40vh;
     border: 5px solid rgb(40, 40, 40);
     border-radius: 10px;
@@ -279,6 +279,14 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: inherit;
+}
+
+/*
+home page little nav
+*/
+
+.babyNavLittle{
+    visibility: collapse;
 }
 
 /*
@@ -587,10 +595,23 @@ Media Queries
 
     main{
         width: 100%;
+        float: none;
     }
 
-    .contentButtonContainer{
+    #contentButtonContainer{
         width: 100%;
+        height: inherit;
+        align-items: center;
+    }
+
+    .projectContainer{
+        width: 95%;
+        float: none;
+    }
+
+    .contentButton{
+        width: 40%;
+        float: center;
     }
 
     nav{
@@ -607,12 +628,22 @@ Media Queries
         display: none;
     }
 
+    .projectContainer{
+      height: 35vh;
+      margin: 5%;
+    }
+
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
   .babyNavButtonContainer{
     visibility: collapse;
   }
+
+  .babyNavLittle{
+    visibility: visible;
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
