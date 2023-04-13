@@ -232,16 +232,13 @@ nav{
     position: relative;
     display: flex;
     align-items: center;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
 }
 
 
 .projectDiv {
   position: absolute;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   width: 100%;
   height: 100%;
   display: flex;
