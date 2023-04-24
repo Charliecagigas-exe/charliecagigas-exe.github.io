@@ -252,6 +252,10 @@ nav{
     font-size: 36px;
 }
 
+.aboutMeImage {
+    width: 80%;
+    border-radius: 5px;
+}
 
 #meknoMonitorProject {
     background-image: url('pictures/MeknoMonitorPictures/paladinConsoleonly.jpg');
@@ -554,7 +558,7 @@ LED App Styles
     text-align: justify;
     text-justify: inter-word;
     font-family: 'Didact Gothic', sans-serif;
-    margin:3vw;
+    margin: 15px;
 }
 
 .aboutMePhotoContainer {
