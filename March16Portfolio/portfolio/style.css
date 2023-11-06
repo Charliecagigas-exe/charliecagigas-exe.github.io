@@ -543,8 +543,6 @@ LED App Styles
     width: 45%;
     height: 90vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin: 5px;
     background-color: #f1f1f1;
