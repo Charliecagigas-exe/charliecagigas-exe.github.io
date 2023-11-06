@@ -18,24 +18,12 @@
     
     <!--Style for scrolling textbox-->
     <style> 
-        table { 
-            border-collapse: collapse; 
-            border-spacing: 0; 
-            width: 100%; 
-            border: 0px solid #ddd; 
-        } 
-          
-        th, 
-        td { 
-            text-align: left; 
-            padding: 8px; 
-        } 
   
         /* width */         
         ::-webkit-scrollbar { 
-            width: 50%; 
+            width: 10px; 
         } 
-  
+
         /* Track */ 
         ::-webkit-scrollbar-track { 
             background: #f1f1f1; 
@@ -51,21 +39,13 @@
             background: #555; 
         } 
           
-        .scroll { 
-            display: block; 
-            border: 0px solid red; 
-            padding: 5px; 
-            margin-top: 5px; 
-            width: 100%; 
-            height: 100px; 
-            overflow-y: scroll; 
-        } 
+        
     </style>
 </head>
 
 <body>
     <nav>
-        <Div id="navBody">
+        <Div class="navBody">
             <div id="navTitleContent">
                 <a href="index.html">
                     <div class="namePlate">
@@ -113,11 +93,22 @@
     </nav>
 
     <main>
-        <div class="contentContainer">
-            <div class="aboutMeTextContainer scroll">
+        <div class="aboutMeContentContainer">
+            
+            <div class="aboutMeTextContainer">
+                <article class="articleBody">
+                    <article class="articleTitleContainer">
+                        <h1 class="articleTitle">About Charles</h1>
+                    </article>
+
+                    <article class="articleContent">
+
+                    </article>
+
+                </article>
                 <p class="aboutMeText">I am a Midwest-based User Experience & Interface Designer from Metro Detroit!</p>
                 <p class="aboutMeText">I am activly pursuing a Bachelor of Arts degree in Professional & Technical Writing with a concentration in Computer Science from Saginaw Valley State University. Uppon Graduation, I want to implement usability and accessibility into new products and buissnesses. My areas of expertise include Usability, Prototyping, Empathy, Clean/Green thinking, and many more.</p>
-                <p class="aboutMeText">Currently, I serve as the Manager of Usability and Marketing for an innovate Cleantech Startup based in southfield Michigan. In this role, I am responsible for developing and executing marketing strategies that drive revenue growth and brand awareness. I am also responsible for a system that monitors the operation of our main product.</p>
+                <p class="aboutMeText">Currently, I serve as the Manager of Usability and Marketing for an innovative Cleantech Startup based in southfield Michigan. In this role, I am responsible for developing and executing marketing strategies that drive revenue growth and brand awareness. I am also responsible for a system that monitors the operation of our main product.</p>
                 <p class="aboutMeText">I work closely with cross-functional teams to ensure that our messaging is consistent across all channels, and I am constantly looking for ways to improve our marketing efforts through data-driven analysis and experimentation.</p>
                 <p class="aboutMeText">Prior to my current role, I held positions at several notable companies, including a national property management corporation, an innovative and emowering startup and multiple educational centers. I gained valuable experience in developing and executing successful usability studies, prototypes, and worked with a wide range of stakeholders.</p>
                 <p class="aboutMeText">Thank you for taking the time to learn more about me, and I look forward to connecting with you!</p>
