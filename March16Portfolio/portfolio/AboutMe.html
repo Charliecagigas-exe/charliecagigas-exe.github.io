@@ -10,36 +10,33 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YFR09YX7P8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-YFR09YX7P8');
     </script>
-    
-    <!--Style for scrolling textbox-->
-    <style> 
-  
-        /* width */         
-        ::-webkit-scrollbar { 
-            width: 10px; 
-        } 
 
-        /* Track */ 
-        ::-webkit-scrollbar-track { 
-            background: #f1f1f1; 
-        } 
-  
-        /* Handle */ 
-        ::-webkit-scrollbar-thumb { 
-            background: #888; 
-        } 
-  
-        /* Handle on hover */ 
-        ::-webkit-scrollbar-thumb:hover { 
-            background: #555; 
-        } 
-          
-        
+    <!--Style for scrolling textbox-->
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
     </style>
 </head>
 
@@ -50,8 +47,10 @@
                 <a href="index.html">
                     <div class="namePlate">
                         <picture>
-                            <source class="namePic lilNamePic" srcset="pictures/titlePlate/NamePlateTransWhiteLogoPNG.png" media="(max-width: 1000px)">
-                            <img class="namePic bigNamePic" src="pictures/titlePlate/NamePlateTransWhiteHeaderPNG.png" alt="Chares Cagigas">
+                            <source class="namePic lilNamePic"
+                                srcset="pictures/titlePlate/NamePlateTransWhiteLogoPNG.png" media="(max-width: 1000px)">
+                            <img class="namePic bigNamePic" src="pictures/titlePlate/NamePlateTransWhiteHeaderPNG.png"
+                                alt="Chares Cagigas">
                         </picture>
                     </div>
                 </a>
@@ -61,9 +60,9 @@
                         on the world.
                     </h2>
                 </div>
-                
+
             </div>
-    
+
             <div class="navButtonContainer">
                 <a href="index.html">
                     <button id="homeButton" class="navButton">
@@ -89,42 +88,94 @@
                     </button>
                 </a>
             </div>
-        </Div>    
+        </Div>
     </nav>
 
     <main>
-        <div class="aboutMeContentContainer">
-            
-            <div class="aboutMeTextContainer">
-                <article class="articleBody">
-                    <article class="articleTitleContainer">
-                        <h1 class="articleTitle">About Charles</h1>
-                    </article>
+        <button onclick="topFunction()" id="AboutMeTopButton" class="topButton" title="go to top">Top</button>
+        <div class="contentContainer">
+            <article class="articleBody">
+                <div class="articleTitleContainer">
+                    <div>
+                        <h1 class="articleTitle">
+                            About&nbsp;Charles
+                        </h1>
+                    </div>
+                </div>
 
-                    <article class="articleContent">
 
-                    </article>
+                <article class="articleContent" id="AboutMeArticleContent">
+                    <hr>
+                    <h2>Charles&nbsp;Phillip&nbsp;Cagigas</h2>
+                    <hr>
+                    <p class="aboutMeText">I am a Midwest-based User Experience & Interface Designer from Metro
+                        Detroit!</p>
+                    <hr>
+                    <p class="aboutMeText">I am activly pursuing a Bachelor of Arts degree in Professional &
+                        Technical Writing with a concentration in Computer Science from Saginaw Valley State
+                        University. Uppon Graduation, I want to implement usability and accessibility into new
+                        products and buissnesses. My areas of expertise include Usability, Prototyping, Empathy,
+                        Clean/Green thinking, and many more.</p>
+                    <div>
+                        <aside class="rightAside">
+                            <figure>
+                                <img class="articlePicture" src="pictures/headshot/Headshot.JPG" alt="Charles Cagigas"
+                                    style="width: 100%;">
+                                <figcaption>Charles Cagigas</figcaption>
+                            </figure>
+                        </aside>
+                    </div>
+                    <p class="aboutMeText">Currently, I serve as the Manager of Usability and Marketing for an
+                        innovative Cleantech Startup based in southfield Michigan. In this role, I am responsible
+                        for developing and executing marketing strategies that drive revenue growth and brand
+                        awareness. I am also responsible for a system that monitors the operation of our main
+                        product.</p>
 
+                    <hr>
+                    <p class="aboutMeText">I work closely with cross-functional teams to ensure that our messaging
+                        is consistent across all channels, and I am constantly looking for ways to improve our
+                        marketing efforts through data-driven analysis and experimentation.</p>
+                    <p class="aboutMeText">Prior to my current role, I held positions at several notable companies,
+                        including a national property management corporation, an innovative and emowering startup
+                        and multiple educational centers. I gained valuable experience in developing and executing
+                        successful usability studies, prototypes, and worked with a wide range of stakeholders.</p>
+                    <p class="aboutMeText">Thank you for taking the time to learn more about me, and I look forward
+                        to connecting with you!</p>
                 </article>
-                <p class="aboutMeText">I am a Midwest-based User Experience & Interface Designer from Metro Detroit!</p>
-                <p class="aboutMeText">I am activly pursuing a Bachelor of Arts degree in Professional & Technical Writing with a concentration in Computer Science from Saginaw Valley State University. Uppon Graduation, I want to implement usability and accessibility into new products and buissnesses. My areas of expertise include Usability, Prototyping, Empathy, Clean/Green thinking, and many more.</p>
-                <p class="aboutMeText">Currently, I serve as the Manager of Usability and Marketing for an innovative Cleantech Startup based in southfield Michigan. In this role, I am responsible for developing and executing marketing strategies that drive revenue growth and brand awareness. I am also responsible for a system that monitors the operation of our main product.</p>
-                <p class="aboutMeText">I work closely with cross-functional teams to ensure that our messaging is consistent across all channels, and I am constantly looking for ways to improve our marketing efforts through data-driven analysis and experimentation.</p>
-                <p class="aboutMeText">Prior to my current role, I held positions at several notable companies, including a national property management corporation, an innovative and emowering startup and multiple educational centers. I gained valuable experience in developing and executing successful usability studies, prototypes, and worked with a wide range of stakeholders.</p>
-                <p class="aboutMeText">Thank you for taking the time to learn more about me, and I look forward to connecting with you!</p>
-            </div>
-            <div class="aboutMePhotoContainer">
-                <img src="pictures/headshot/Headshot.JPG" class="aboutMeImage" >
-            </div>
-            
+
+            </article>
+            <hr>
         </div>
     </main>
-    
+
+
 
     <footer>
         <p class="footerText">Charles Cagigas ©2023</p>
-    </footer> 
-    
+    </footer>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("AboutMeTopButton");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
 </body>
 
 </html>
